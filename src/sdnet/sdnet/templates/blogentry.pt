@@ -1,0 +1,42 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal" 
+      metal:use-macro="master">
+<head>
+ <metal:slot metal:fill-slot="stylesheets">
+  <title>${title}</title>
+ </metal:slot>
+</head>
+<body>
+
+<metal:slot metal:fill-slot="body-content">
+
+
+  <h3>${title}</h3>
+
+  <div id="entry" tal:content="structure blogentry" />
+
+  <div id="attachment_url"
+       tal:repeat="attachment attachments">
+     Attachment:
+      <a href="${request.resource_url(attachment, 'download.html')}"
+         >${attachment.__name__}</a>
+  </div>
+
+  <p>posted: ${pubdate.strftime('%Y-%m-%d %H:%M')}&nbsp;&nbsp;
+             by ${author} |
+     <a href="${url}">permalink</a></p>
+
+  <div class="blogentry">
+   <p class="back"><a href="${blog_url}">Back to blog</a></p>
+  </div>
+
+  <p id="blog_links">
+  [ <a href="${rss_url}">RSS 2.0</a>
+  | <a href="${atom_url}">ATOM 1.0</a>
+  ]
+  </p>
+
+</metal:slot>
+</body>
+</html>

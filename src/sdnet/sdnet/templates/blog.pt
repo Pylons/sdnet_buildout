@@ -1,0 +1,55 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal" 
+      metal:use-macro="master">
+<head>
+ <metal:slot metal:fill-slot="stylesheets">
+  <title>${blog['title']}</title>
+ </metal:slot>
+ <metal:slot metal:fill-slot="stylesheets">
+  <link media="screen" rel="Stylesheet" type="text/css"
+        href="/static/pygments.css"/>
+  <link media="screen" rel="Stylesheet" type="text/css"
+        href="/static/sphinx.css"/>
+ </metal:slot>
+</head>
+<body>
+<metal:slot metal:fill-slot="body-content">
+
+
+  <h2><a href="blogurl"
+      >${title}<tal:if tal:condition="category">: ${category}</tal:if></a></h2>
+
+  <div tal:repeat="blogentry blogentries">
+   <h3><a href="${blogentry['url']}">${blogentry['title']}</a></h3>
+
+   <div tal:content="structure blogentry['body']"></div>
+
+   <p>posted: ${blogentry['pubdate'].strftime('%Y-%m-%d %H:%M')}&nbsp;&nbsp;
+             by ${blogentry['author']} |
+      <a href="${blogentry['url']}">permalink</a> |
+    </p>
+  </div>
+
+  <div class="blogentry" tal:condition="category">
+   <p class="back"><a href="${blog_url}">Back to blog</a></p>
+  </div>
+
+  <div tal:condition="not category">
+   Categories:
+   <tal:loop tal:repeat="c categories">
+    &nbsp;&nbsp;<a href="${blog_url}?category=${c}">${c}</a>
+   </tal:loop>
+  </div>
+
+  <p id="blog_links">
+  [ <a href="${rss_url}">RSS 2.0</a>
+  | <a href="${atom_url}">ATOM 1.0</a>
+  ]
+  </p>
+
+
+</metal:slot>
+
+</body>
+</html>

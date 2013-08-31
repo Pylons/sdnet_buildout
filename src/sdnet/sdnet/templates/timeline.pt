@@ -1,0 +1,33 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal" 
+      metal:use-macro="master">
+<head>
+ <metal:slot metal:fill-slot="stylesheets">
+  <title>${blog['title']}</title>
+ </metal:slot>
+ <metal:slot metal:fill-slot="stylesheets">
+  <link media="screen" rel="Stylesheet" type="text/css"
+        href="/static/pygments.css"/>
+  <link media="screen" rel="Stylesheet" type="text/css"
+        href="/static/sphinx.css"/>
+ </metal:slot>
+</head>
+<body>
+<metal:slot metal:fill-slot="body-content">
+
+
+  <h2><a href="${timeline_url}">${title}</a></h2>
+
+  <div tal:repeat="event events">
+
+   <h3>${event['date']} - ${event['title']}</h3>
+
+   <div tal:content="structure event['description']"></div>
+  </div>
+
+
+</metal:slot>
+
+</body>
+</html>

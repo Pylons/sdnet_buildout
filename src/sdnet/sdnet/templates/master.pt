@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8"/>
+ <metal:title metal:define-slot="head-title">
+  <title>Agendaless Consulting</title>
+ </metal:title>
+ <meta name="viewport"
+       content="width=device-width, initial-scale=1.0"/>
+
+ <link rel="stylesheet" href="/static/bootstrap-2.2.2-combined.min.css" />
+ <link rel="stylesheet" href="/static/layout.css"/>
+ <metal:title metal:define-slot="stylesheets"/>
+
+ <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+ <!--[if lt IE 9]>
+ <script type="text/javascript" src="/static/html5-ie68-shiv.js"></script>
+ <![endif]-->
+
+ <script type="text/javascript" src="/static/jquery-1.9.0.1-min.js"></script>
+ <metal:title metal:define-slot="scripts"/>
+
+</head>
+
+<body>
+
+ <div class="container-fluid">
+
+  <div id="header" class="row-fluid">
+   <a class="brand" href="/"
+      ><img alt="logo" width="250" height="150"
+                 src="/static/agendaless.png"/></a>
+   <ul>
+    <li tal:repeat="x nav_links">
+     <a href="${x['relative_url']}">${x['title']}</a>
+    </li>
+   </ul>
+  </div>
+
+  <div id="main-row" class="row-fluid">
+
+   <div class="span1"> &nbsp; </div>
+
+   <div id="main-container" class="span10">
+
+   <metal:body metal:define-slot="body-content">
+
+   </metal:body>
+   </div>
+   <div class="span1"> &nbsp; </div>
+  </div>
+
+  <div id="footer" class="row-fluid">
+
+   <div class="span1"> &nbsp; </div>
+
+   <div id="footer-left" class="span3">
+            <ul>
+                <li>
+                    <a href="#">People</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Contact Us</a>
+                </li>
+            </ul>
+   </div>
+
+   <div id="footer-middle" class="span4"> &copy; Agendaless Consulting </div>
+
+   <div id="footer-right" class="span3">
+    <ul>
+                <li>
+                    <a href="#">News</a>
+                </li>
+                <li>
+                    <a href="#">Articles</a>
+                </li>
+                <li>
+                    <a href="#">Site Map</a>
+                </li>
+    </ul>
+   </div>
+
+   <div class="span1"> &nbsp; </div>
+
+  </div>
+
+ </div><!--/.fluid-container-->
+
+ <!-- Let the page draw before getting the feature image -->
+
+ <script type="text/javascript" src="/static/bootstrap-2.2.2.min.js"></script>
+ <script type="text/javascript" src="layout.js"></script>
+
+</body>
+</html>
