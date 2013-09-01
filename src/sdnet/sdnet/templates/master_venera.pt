@@ -34,27 +34,31 @@
                           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Features</a>
                           <ul class='dropdown-menu'>
                             <li>
-                              <a href="features/pricing_tables.html">Pricing Table</a>
+                              <a href="/build">Build Custom Sites</a>
                             </li>
                             <li>
-                              <a href="features/awesome_icons.html">Awesome Icons</a>
+                              <a href="/admin">Admin UI</a>
                             </li>
                             <li>
-                              <a href="features/basic_elements.html">Basic Elements</a>
-                            </li>
-                            <li class='divider'></li>
-                            <li class='nav-header'>Pages Examples</li>
-                            <li>
-                              <a href="features/about_us_page.html">About Us Page</a>
+                              <a href="/usermgmt">User Management</a>
                             </li>
                             <li>
-                              <a href="gallery_of_images.html">Gallery of Images</a>
+                              <a href="/security">Security</a>
                             </li>
                             <li>
-                              <a href="features/not_found_page.html">Page not found</a>
+                              <a href="/indexing">Indexing</a>
                             </li>
                             <li>
-                              <a href="features/coming_soon_page.html">Coming Soon Page</a>
+                              <a href="/workflow">Workflow</a>
+                            </li>
+                            <li>
+                              <a href="/undo">Undo</a>
+                            </li>
+                            <li>
+                              <a href="/monitoring">Monitoring</a>
+                            </li>
+                            <li>
+                              <a href="/auditing">Auditing</a>
                             </li>
                           </ul>
                         </li>
@@ -62,35 +66,18 @@
                           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation</a>
                           <ul class='dropdown-menu'>
                             <li>
-                              <a href="documentation/get_started.html">Get Started</a>
+                              <a href="http://docs.pylonsproject.org/projects/substanced/en/latest/">Developer Docs</a>
                             </li>
                             <li>
-                              <a href="documentation/scaffolding.html">Scaffolding</a>
+                              <a href="http://docs.pylonsproject.org/projects/substanced/en/latest/#api-documentation">API Docs</a>
                             </li>
                             <li>
-                              <a href="documentation/base_css.html">Base CSS</a>
-                            </li>
-                            <li>
-                              <a href="documentation/components.html">Components</a>
-                            </li>
-                            <li>
-                              <a href="documentation/javascript.html">Javascript</a>
+                              <a href="http://docs.pylonsproject.org/projects/substanced/en/latest/#installation">Installation Docs</a>
                             </li>
                           </ul>
                         </li>
-                        <li class='dropdown'>
-                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
-                          <ul class='dropdown-menu'>
-                            <li>
-                              <a href="blog/single_post.html">Single Post</a>
-                            </li>
-                            <li>
-                              <a href="blog/two_per_line.html">Multiple Posts (two)</a>
-                            </li>
-                            <li>
-                              <a href="blog/one_per_line.html">Multiple Posts (one)</a>
-                            </li>
-                          </ul>
+                        <li class=''>
+                          <a href="https://github.com/Pylons/substanced">Code <i class='icon-github'></i></a>
                         </li>
                       </ul>
                     </div>
@@ -105,73 +92,91 @@
               </div>
               <div class='container'>
                 <div class='row'>
-                  <div class='span4'>
-                    <div class='info-bullet'>
-                      <i class='icon-sitemap'></i>
-                      <h5>Build Custom Sites</h5>
-                      <p>Build highly custom sites of most kinds: content management systems, ecommerce systems, intranets, bespoke websites, and more.</p>
+                  <a href='/build'>
+                    <div class='span4'>
+                      <div class='info-bullet'>
+                        <i class='icon-sitemap'></i>
+                        <h5>Build Custom Sites</h5>
+                        <p>Build highly custom sites of most kinds: content management systems, ecommerce systems, intranets, bespoke websites, and more.</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class='span4'>
-                    <div class='info-bullet'>
-                      <i class='icon-folder-close'></i>
-                      <h5>Admin UI</h5>
-                      <p>Get an out-of-the-box management interface that you can plug custom forms and other management features into.  Handle large amounts of content easily.</p>
+                  </a>
+                  <a href="/admin">
+                    <div class='span4'>
+                      <div class='info-bullet'>
+                        <i class='icon-folder-close'></i>
+                        <h5>Admin UI</h5>
+                        <p>Get an out-of-the-box management interface that you can plug custom forms and other management features into.  Handle large amounts of content easily.</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class='span4'>
-                    <div class='info-bullet'>
-                      <i class='icon-user'></i>
-                      <h5>User Management</h5>
-                      <p>Give yourself out-of-the-box user and group management and facilities for changing passwords and password resets.</p>
+                  </a>
+                  <a href="/usermgmt">
+                    <div class='span4'>
+                      <div class='info-bullet'>
+                        <i class='icon-user'></i>
+                        <h5>User Management</h5>
+                        <p>Give yourself out-of-the-box user and group management and facilities for changing passwords and password resets.</p>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class='row'>
-                  <div class='span4'>
-                    <div class='info-bullet'>
-                      <i class='icon-lock'></i>
-                      <h5>Built-In Security</h5>
-                      <p>Make highly granular security assertions against database content, allowing for tight access control of specific resources.</p>
+                  <a href="/security">
+                    <div class='span4'>
+                      <div class='info-bullet'>
+                        <i class='icon-lock'></i>
+                        <h5>Built-In Security</h5>
+                        <p>Make highly granular security assertions against database content, allowing for tight access control of specific resources.</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class='span4'>
-                    <div class='info-bullet'>
-                      <i class='icon-search'></i>
-                      <h5>Text Indexing</h5>
-                      <p>Built-in text indexing and search allows your users to find their content without requiring you to configure, manage and learn an external text indexing system.</p>
+                  </a>
+                  <a href="/indexing">
+                    <div class='span4'>
+                      <div class='info-bullet'>
+                        <i class='icon-search'></i>
+                        <h5>Text Indexing</h5>
+                        <p>Built-in text indexing and search allows your users to find their content without requiring you to configure, manage and learn an external text indexing system.</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class='span4'>
-                    <div class='info-bullet'>
-                      <i class='icon-comments'></i>
-                      <h5>Workflow</h5>
-                      <p>Define workflow states and transitions for types of content, and enforce them.</p>
+                  </a>
+                  <a href="/workflow">
+                    <div class='span4'>
+                      <div class='info-bullet'>
+                        <i class='icon-comments'></i>
+                        <h5>Workflow</h5>
+                        <p>Define workflow states and transitions for types of content, and enforce them.</p>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class='row'>
-                  <div class='span4'>
-                    <div class='info-bullet'>
-                      <i class='icon-undo'></i>
-                      <h5>Undo</h5>
-                      <p>Undo virtually any action taken via the management interface or by a retail user.</p>
+                  <a href="/workflow">
+                    <div class='span4'>
+                      <div class='info-bullet'>
+                        <i class='icon-undo'></i>
+                        <h5>Undo</h5>
+                        <p>Undo virtually any action taken via the management interface or by a retail user.</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class='span4'>
-                    <div class='info-bullet'>
-                      <i class='icon-dashboard'></i>
-                      <h5>Monitoring</h5>
-                      <p>Performance and availability monitoring is baked in.  Use any <i>statsd</i> provider to set up visibility into your application's performance.</p>
+                  </a>
+                  <a href="/monitoring">
+                    <div class='span4'>
+                      <div class='info-bullet'>
+                        <i class='icon-dashboard'></i>
+                        <h5>Monitoring</h5>
+                        <p>Performance and availability monitoring is baked in.  Use any <i>statsd</i> provider to set up visibility into your application's performance.</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class='span4'>
-                    <div class='info-bullet'>
-                      <i class='icon-copy'></i>
-                      <h5>Auditing</h5>
-                      <p>Every action taken by each site user is logged into a built-in audit log facility.</p>
+                  </a>
+                  <a href="/auditing">
+                    <div class='span4'>
+                      <div class='info-bullet'>
+                        <i class='icon-copy'></i>
+                        <h5>Auditing</h5>
+                        <p>Every action taken by each site user is logged into a built-in audit log facility.</p>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
