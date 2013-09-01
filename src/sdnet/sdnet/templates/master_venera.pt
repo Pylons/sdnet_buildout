@@ -174,20 +174,20 @@
                   <div class='span3'>
                     <div class='white-card'>
                       <div class="img-w hover-fader">
-                        <a href="/static/images/adminui-halfsized.png" data-rel="lightbox[gallery]"><img alt="Folder contents management" src="/static/images/adminui-halfsized.png">
+                        <a href="/static/images/adminui.png" data-rel="lightbox[gallery]"><img alt="Folder contents management" src="/static/images/adminui.png">
                           <span class="hover-fade">
                             <i class="icon-zoom-in"></i>
                           </span>
                         </a>
                       </div>
-                      <h5>Folder Contents Management</h5>
-                      <p>Handle lots of content by arranging it into folders within Substance D's resource tree.  Folders can become subsites for your customers.</p>
+                      <h5>Folder contents</h5>
+                      <p>Handle lots of content by arranging it into folders within Substance D's resource tree.  Folders can become subsites for your customers.  Realtime updates when other users edit.</p>
                     </div>
                   </div>
                   <div class='span3'>
                     <div class='white-card'>
                       <div class="img-w hover-fader">
-                        <a href="/static/images/securitymgmt-halfsized.png" data-rel="lightbox[gallery]"><img alt="Security management" src="/static/images/securitymgmt-halfsized.png">
+                        <a href="/static/images/securitymgmt.png" data-rel="lightbox[gallery]"><img alt="Security management" src="/static/images/securitymgmt.png">
                           <span class="hover-fade">
                             <i class="icon-zoom-in"></i>
                           </span>
@@ -200,7 +200,7 @@
                   <div class='span3'>
                     <div class='white-card'>
                       <div class="img-w hover-fader">
-                        <a href="/static/images/undo-halfsized.png" data-rel="lightbox[gallery]"><img alt="Undo" src="/static/images/undo-halfsized.png">
+                        <a href="/static/images/undo.png" data-rel="lightbox[gallery]"><img alt="Undo" src="/static/images/undo.png">
                           <span class="hover-fade">
                             <i class="icon-zoom-in"></i>
                           </span>
@@ -213,7 +213,7 @@
                   <div class='span3'>
                     <div class='white-card'>
                       <div class="img-w hover-fader">
-                        <a href="/static/images/properties-halfsized.png" data-rel="lightbox[gallery]"><img alt="Property management" src="/static/images/properties-halfsized.png">
+                        <a href="/static/images/properties.png" data-rel="lightbox[gallery]"><img alt="Property management" src="/static/images/properties.png">
                           <span class="hover-fade">
                             <i class="icon-zoom-in"></i>
                           </span>
@@ -267,7 +267,7 @@
                       </ul>
                     </div>
                     <div class='span6'>
-                      <h5 class='footer-header'>Authors</h5>
+                      <h5 class='footer-header'>Substance D Developers</h5>
                       <ul class='footer-img-list thumbnails'>
                         <li class='span1'>
                           <a class='thumbnail'>
