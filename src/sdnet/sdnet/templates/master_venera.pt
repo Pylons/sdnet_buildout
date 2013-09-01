@@ -10,9 +10,6 @@
   <meta name="description" content="Substance D Web Application Development Environment">
   <meta name="viewport" content="width=device-width">
   <link href="assets/css/theme_venera_blue.css" media="all" rel="stylesheet" type="text/css" />
-  <!-- <link href="http://fonts.googleapis.com/css?family=Abel:400|Oswald:300,400,700" media="all" rel="stylesheet" type="text/css" /> -->
-  <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700" media="all" rel="stylesheet" type="text/css" />
-
 </head>
 <body>
         <!--[if lt IE 7]>
@@ -96,25 +93,6 @@
                           </ul>
                         </li>
                       </ul>
-                      <!-- <div class='top-account-control visible-desktop'>
-                      <a href="features/pricing_tables.html" class="top-create-account">Create Account</a>
-                      <a href="#" class="top-sign-in">Sign In</a>
-                      <div class='login-box'>
-                      <a class='close login-box-close' href='#'>&times;</a>
-                      <h4 class='login-box-head'>Login Form</h4>
-                      <div class='control-group'>
-                      <label>Username</label>
-                      <input class='span2' placeholder='Input username...' type='text'>
-                      </div>
-                      <div class='control-group'>
-                      <label>Password</label>
-                      <input class='span2' placeholder='Input password...' type='text'>
-                      </div>
-                      <div class='login-actions'>
-                      <button class='btn btn-primary'>Log Me In</button>
-                      </div>
-                      </div>
-                      </div> -->
                     </div>
                   </div>
                 </div>
