@@ -297,230 +297,6 @@
                 </div>
               </div>
             </section>
-            <section class='section-wrapper stripped'>
-              <div class='container'>
-                <div class='row'>
-                  <div class='span12'>
-                    <h3 class='section-header'>From the Blog</h3>
-                  </div>
-                  <div class='span4'>
-                    <div class='white-card recent-post clearfix'>
-                      <h5 class='recent-post-header'>
-                        <a href="blog/single_post.html">Nullam velit diam, rhoncus sed</a>
-                      </h5>
-                      <div class='post-info clearfix'>
-                        <div class='pull-left'>
-                          <span class='post-date'>January 15, 2011</span>
-                          <a href="blog/single_post.html" class="post-comments">14 Comments</a>
-                        </div>
-                        <div class='pull-right'>
-                          <a href="#" class="post-like"><i class='icon-heart'></i>
-                            250
-                          </a>
-                        </div>
-                      </div>
-                      <img alt="Photo-card-big-1" class="post-image" src="assets/images/test-square.png" />
-                      <p class='post-content separated'>Donec vel turpis non erat luctus ultrices vel sed massa. Quisque commodo venenatis arcu, non volutpat arcu lobortis at. Donec imperdiet nibh id metus adipiscing semper.</p>
-                      <a href="blog/single_post.html" class="btn btn-primary btn-extra pull-right">Read More &gt;</a>
-                    </div>
-                  </div>
-                  <div class='span4'>
-                    <div class='white-card recent-post clearfix'>
-                      <h5 class='recent-post-header'>
-                        <a href="blog/single_post.html">Nullam velit diam, rhoncus sed</a>
-                      </h5>
-                      <div class='post-info clearfix'>
-                        <div class='pull-left'>
-                          <span class='post-date'>January 15, 2011</span>
-                          <a href="blog/single_post.html" class="post-comments">14 Comments</a>
-                        </div>
-                        <div class='pull-right'>
-                          <a href="#" class="post-like"><i class='icon-heart'></i>
-                            250
-                          </a>
-                        </div>
-                      </div>
-                      <img alt="Photo-card-big-2" class="post-image" src="assets/images/test-square.png" />
-                      <p class='post-content separated'>Donec vel turpis non erat luctus ultrices vel sed massa. Quisque commodo venenatis arcu, non volutpat arcu lobortis at. Donec imperdiet nibh id metus adipiscing semper.</p>
-                      <a href="blog/single_post.html" class="btn btn-primary btn-extra pull-right">Read More &gt;</a>
-                    </div>
-                  </div>
-                  <div class='span4'>
-                    <div class='white-card recent-post clearfix'>
-                      <h5 class='recent-post-header'>
-                        <a href="blog/single_post.html">Nullam velit diam, rhoncus sed</a>
-                      </h5>
-                      <div class='post-info clearfix'>
-                        <div class='pull-left'>
-                          <span class='post-date'>January 15, 2011</span>
-                          <a href="blog/single_post.html" class="post-comments">14 Comments</a>
-                        </div>
-                        <div class='pull-right'>
-                          <a href="#" class="post-like"><i class='icon-heart'></i>
-                            250
-                          </a>
-                        </div>
-                      </div>
-                      <img alt="Photo-card-big-6" class="post-image" src="assets/images/test-square.png" />
-                      <p class='post-content separated'>Donec vel turpis non erat luctus ultrices vel sed massa. Quisque commodo venenatis arcu, non volutpat arcu lobortis at. Donec imperdiet nibh id metus adipiscing semper.</p>
-                      <a href="blog/single_post.html" class="btn btn-primary btn-extra pull-right post-btn">Read More &gt;</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <!-- <section class='section-wrapper stripped'>
-            <div class='container'>
-            <div class='row'>
-            <div class='span12'>
-            <h3 class='section-header'>Payment Plans Information</h3>
-            <div class='white-card no-padding'>
-            <div class='pricing-table'>
-            <div class='row'>
-            <div class='span3'>
-            <div class='pricing-plan-w first-plan'>
-            <div class='plan-name'>
-            Free
-            </div>
-            <div class='plan-price-w'>
-            <div class='plan-price-desc'>Starting at</div>
-            <div class='plan-price'>
-            <span class='price-currency'>$</span>
-            <span class='price-self'>0</span>
-            <span class='price-period'>/mo</span>
-            </div>
-            </div>
-            <div class='plan-desc'>
-            <ul>
-            <li>Unlimited bandwidth</li>
-            <li>
-            <strong>100</strong>
-            Products
-            </li>
-            <li>
-            <strong>1GB</strong>
-            Storage
-            </li>
-            <li>
-            <strong>2.0%</strong>
-            Transaction fee
-            </li>
-            </ul>
-            <p>Plan Information: In eu libero tortor, et bibendum tellus. Fusce a libero est.</p>
-            <a href="register.html" class="btn btn-primary btn-large">Select This Plan</a>
-            </div>
-            </div>
-            </div>
-            <div class='span3'>
-            <div class='pricing-plan-w'>
-            <div class='plan-name'>
-            Premium
-            </div>
-            <div class='plan-price-w'>
-            <div class='plan-price-desc'>Starting at</div>
-            <div class='plan-price'>
-            <span class='price-currency'>$</span>
-            <span class='price-self'>15</span>
-            <span class='price-period'>/mo</span>
-            </div>
-            </div>
-            <div class='plan-desc'>
-            <ul>
-            <li>Unlimited bandwidth</li>
-            <li>
-            <strong>500</strong>
-            Products
-            </li>
-            <li>
-            <strong>3GB</strong>
-            Storage
-            </li>
-            <li>
-            <strong>1.8%</strong>
-            Transaction fee
-            </li>
-            </ul>
-            <p>Plan Information: In eu libero tortor, et bibendum tellus. Fusce a libero est.</p>
-            <a href="register.html" class="btn btn-primary btn-large">Select This Plan</a>
-            </div>
-            </div>
-            </div>
-            <div class='span3'>
-            <div class='pricing-plan-w'>
-            <div class='plan-name'>
-            Enterprise
-            </div>
-            <div class='plan-price-w'>
-            <div class='plan-price-desc'>Starting at</div>
-            <div class='plan-price'>
-            <span class='price-currency'>$</span>
-            <span class='price-self'>25</span>
-            <span class='price-period'>/mo</span>
-            </div>
-            </div>
-            <div class='plan-desc'>
-            <ul>
-            <li>Unlimited bandwidth</li>
-            <li>
-            <strong>1000</strong>
-            Products
-            </li>
-            <li>
-            <strong>10GB</strong>
-            Storage
-            </li>
-            <li>
-            <strong>1.6%</strong>
-            Transaction fee
-            </li>
-            </ul>
-            <p>Plan Information: In eu libero tortor, et bibendum tellus. Fusce a libero est.</p>
-            <a href="register.html" class="btn btn-primary btn-large">Select This Plan</a>
-            </div>
-            </div>
-            </div>
-            <div class='span3'>
-            <div class='pricing-plan-w last-plan'>
-            <div class='plan-name'>
-            Unlimited
-            </div>
-            <div class='plan-price-w'>
-            <div class='plan-price-desc'>Starting at</div>
-            <div class='plan-price'>
-            <span class='price-currency'>$</span>
-            <span class='price-self'>50</span>
-            <span class='price-period'>/mo</span>
-            </div>
-            </div>
-            <div class='plan-desc'>
-            <ul>
-            <li>Unlimited bandwidth</li>
-            <li>
-            <strong>2000</strong>
-            Products
-            </li>
-            <li>
-            <strong>20GB</strong>
-            Storage
-            </li>
-            <li>
-            <strong>1.0%</strong>
-            Transaction fee
-            </li>
-            </ul>
-            <p>Plan Information: In eu libero tortor, et bibendum tellus. Fusce a libero est.</p>
-            <a href="register.html" class="btn btn-primary btn-large">Select This Plan</a>
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-            </section> -->
-
             <footer>
               <div class='pre-footer'>
                 <div class='container'>
@@ -529,21 +305,6 @@
                       <div class='footer-logo'>
                         <a>Substance<strong>D</strong></a>
                       </div>
-                      <ul class='footer-address'>
-                        <li>
-                          <strong>Address:</strong>
-                          2850 Collins ave<br/>
-                          Camden, NJ 32432-1343, USA
-                        </li>
-                        <li>
-                          <strong>Phone:</strong>
-                          (324) 234-2343
-                        </li>
-                        <li>
-                          <strong>Fax:</strong>
-                          (324) 366-5423
-                        </li>
-                      </ul>
                     </div>
                     <div class='span4'>
                       <h5 class='footer-header'>Recent Posts</h5>
@@ -563,7 +324,7 @@
                       </ul>
                     </div>
                     <div class='span4'>
-                      <h5 class='footer-header'>Photostream</h5>
+                      <h5 class='footer-header'>Authors</h5>
                       <ul class='footer-img-list thumbnails'>
                         <li class='span1'>
                           <a class='thumbnail'>
@@ -614,7 +375,7 @@
                 <div class='container'>
                   <div class='row'>
                     <div class='span6'>
-                      <div class='copyright'>Copyright &copy; 2012 Tamerlan Soziev. All rights reserved.</div>
+                      <div class='copyright'>Copyright &copy; 2013 Agendaless Consulting. All rights reserved.</div>
                     </div>
                     <div class='span6'>
                       <ul class='footer-links'>
