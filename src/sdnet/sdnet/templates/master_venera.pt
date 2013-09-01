@@ -291,17 +291,17 @@
                       <ul class='footer-img-list thumbnails'>
                         <li class='span1'>
                           <a class='thumbnail'>
-                            <img alt="8b9890" src="assets/images/test-square.png" />
+                            <img alt="Chris McDonough" title="Chris McDonough" src="/static/images/mcdonc.jpg" />
                           </a>
                         </li>
                         <li class='span1'>
                           <a class='thumbnail'>
-                            <img alt="8b9890" src="assets/images/test-square.png" />
+                            <img alt="Paul Everitt" title="Paul Everitt" src="/static/images/repaul.jpg" />
                           </a>
                         </li>
                         <li class='span1'>
                           <a class='thumbnail'>
-                            <img alt="8b9890" src="assets/images/test-square.png" />
+                            <img alt="Tres Seaver" title="Tres Seaver" src="/static/images/tresequis.jpg" />
                           </a>
                         </li>
                         <li class='span1'>
