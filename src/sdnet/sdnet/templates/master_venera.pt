@@ -260,7 +260,7 @@
                   <div class='row'>
                     <div class='span4'>
                       <div class='footer-logo'>
-                        <a>Substance<strong>D</strong></a>
+                        <a>Substance <strong>D</strong></a>
                       </div>
                     </div>
                     <div class='span4'>
@@ -328,28 +328,21 @@
                   </div>
                 </div>
               </div>
-              <div class='deep-footer'>
+              <div class='deep-footer'
+                   tal:define="datetime import:datetime;
+                               year datetime.datetime.utcnow().year;">
                 <div class='container'>
                   <div class='row'>
                     <div class='span6'>
-                      <div class='copyright'>Copyright &copy; 2013 Agendaless Consulting. All rights reserved.</div>
+                      <div class='copyright'>Copyright &copy; ${year} Agendaless Consulting. All rights reserved.</div>
                     </div>
                     <div class='span6'>
                       <ul class='footer-links'>
                         <li>
-                          <a>Some</a>
+                          <a href="http://www.pylonsproject.org">A Pylons Project</a>
                         </li>
                         <li>
-                          <a>Footer</a>
-                        </li>
-                        <li>
-                          <a>Policy</a>
-                        </li>
-                        <li>
-                          <a>Terms Of Use</a>
-                        </li>
-                        <li>
-                          <a>Links</a>
+                          <a href="https://agendaless.com">Agendaless Consulting</a>
                         </li>
                       </ul>
                     </div>
