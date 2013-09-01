@@ -47,8 +47,16 @@
                             </li>
                           </ul>
                         </li>
-                        <li class=''>
-                          <a href="/support">Support</a>
+                        <li class='dropdown'>
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Support</a>
+                          <ul class='dropdown-menu'>
+                            <li>
+                              <a href="/support">Community Support</a>
+                            </li>
+                            <li>
+                              <a href="/consulting">Consulting Services</a>
+                            </li>
+                          </ul>
                         </li>
                         <li class=''>
                           <a href="https://github.com/Pylons/substanced">Code <i class='icon-github'></i></a>
@@ -183,7 +191,7 @@
                         </a>
                       </div>
                       <h5>Security management</h5>
-                      <p>Each item in the resource tree can have its own authorization policy.  The resource tree allows you to protect folders full of content with the same settings.</p>
+                      <p>Each item in the resource tree can have its own authorization policy.  The resource tree allows you to protect all the content in a folder and any of its subfolders with the same settings.</p>
                     </div>
                   </div>
                   <div class='span3'>
@@ -258,13 +266,8 @@
               <div class='pre-footer'>
                 <div class='container'>
                   <div class='row'>
-                    <div class='span4'>
-                      <div class='footer-logo'>
-                        <a>Substance <strong>D</strong></a>
-                      </div>
-                    </div>
-                    <div class='span4'>
-                      <h5 class='footer-header'>Recent Posts</h5>
+                    <div class='span6'>
+                      <h5 class='footer-header'>Recent Tweets</h5>
                       <ul class='footer-list'>
                         <li>
                           <a>Vestibulum auctor dapibus</a>
@@ -280,19 +283,9 @@
                         </li>
                       </ul>
                     </div>
-                    <div class='span4'>
+                    <div class='span6'>
                       <h5 class='footer-header'>Authors</h5>
                       <ul class='footer-img-list thumbnails'>
-                        <li class='span1'>
-                          <a class='thumbnail'>
-                            <img alt="8b9890" src="assets/images/test-square.png" />
-                          </a>
-                        </li>
-                        <li class='span1'>
-                          <a class='thumbnail'>
-                            <img alt="8b9890" src="assets/images/test-square.png" />
-                          </a>
-                        </li>
                         <li class='span1'>
                           <a class='thumbnail'>
                             <img alt="8b9890" src="assets/images/test-square.png" />
@@ -342,7 +335,7 @@
                           <a href="http://www.pylonsproject.org">A Pylons Project</a>
                         </li>
                         <li>
-                          <a href="https://agendaless.com">Agendaless Consulting</a>
+                          <a href="https://agendaless.com">By Agendaless Consulting</a>
                         </li>
                       </ul>
                     </div>
