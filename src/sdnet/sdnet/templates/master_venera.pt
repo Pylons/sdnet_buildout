@@ -250,21 +250,29 @@
                 <div class='container'>
                   <div class='row'>
                     <div class='span6'>
-                      <h5 class='footer-header'>Recent Tweets</h5>
-                      <ul class='footer-list'>
-                        <li>
-                          <a>Vestibulum auctor dapibus</a>
-                        </li>
-                        <li>
-                          <a>Aliquam tincidunt mauris</a>
-                        </li>
-                        <li>
-                          <a>Lorem ipsum dolor sit</a>
-                        </li>
-                        <li>
-                          <a>Consectetur adipisicing elit</a>
-                        </li>
-                      </ul>
+                      <div class='blog-recent-tweets widget-tp'>
+                        <h5 class="footer-header">
+                          <i class='icon-twitter-sign'></i>
+                          Recent Tweets
+                        </h5>
+                        <ul>
+                          <li>
+                            <a href="#">about 7 hours ago</a>
+                            Aliquam vehicula tristique turpis dignissim accumsan
+                            <a href="#">soziev.com</a>
+                          </li>
+                          <li>
+                            <a href="#">about 7 hours ago</a>
+                            Aliquam vehicula tristique turpis dignissim accumsan
+                            <a href="#">soziev.com</a>
+                          </li>
+                          <li>
+                            <a href="#">about 7 hours ago</a>
+                            Aliquam vehicula tristique turpis dignissim accumsan
+                            <a href="#">soziev.com</a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                     <div class='span6'>
                       <h5 class='footer-header'>Substance D Developers</h5>
@@ -310,7 +318,7 @@
                 <div class='container'>
                   <div class='row'>
                     <div class='span6'>
-                      <div class='copyright'>Copyright &copy; ${year} Agendaless Consulting. All rights reserved.</div>
+                      <div class='copyright'>Copyright &copy; ${year} <a href="https://agendaless.com">Agendaless Consulting.</a> All rights reserved.</div>
                     </div>
                     <div class='span6'>
                       <ul class='footer-links'>
