@@ -31,38 +31,6 @@
                           <a href="index.html">Home</a>
                         </li>
                         <li class='dropdown'>
-                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Features</a>
-                          <ul class='dropdown-menu'>
-                            <li>
-                              <a href="/build">Build Custom Sites</a>
-                            </li>
-                            <li>
-                              <a href="/admin">Admin UI</a>
-                            </li>
-                            <li>
-                              <a href="/usermgmt">User Management</a>
-                            </li>
-                            <li>
-                              <a href="/security">Security</a>
-                            </li>
-                            <li>
-                              <a href="/indexing">Indexing</a>
-                            </li>
-                            <li>
-                              <a href="/workflow">Workflow</a>
-                            </li>
-                            <li>
-                              <a href="/undo">Undo</a>
-                            </li>
-                            <li>
-                              <a href="/monitoring">Monitoring</a>
-                            </li>
-                            <li>
-                              <a href="/auditing">Auditing</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li class='dropdown'>
                           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation</a>
                           <ul class='dropdown-menu'>
                             <li>
@@ -75,6 +43,9 @@
                               <a href="http://docs.pylonsproject.org/projects/substanced/en/latest/#installation">Installation Docs</a>
                             </li>
                           </ul>
+                        </li>
+                        <li class=''>
+                          <a href="/support">Support</a>
                         </li>
                         <li class=''>
                           <a href="https://github.com/Pylons/substanced">Code <i class='icon-github'></i></a>
