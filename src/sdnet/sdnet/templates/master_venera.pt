@@ -10,6 +10,9 @@
   <meta name="description" content="Substance D Web Application Development Environment">
   <meta name="viewport" content="width=device-width">
   <link href="assets/css/theme_venera_blue.css" media="all" rel="stylesheet" type="text/css" />
+  <!-- Fav icons -->
+  <link rel="shortcut icon"
+        href="${request.static_url('substanced.sdi:static/img/favicon.ico')}"/>
 </head>
 <body>
         <!--[if lt IE 7]>
@@ -81,7 +84,7 @@
                       </div>
                     </div>
                   </a>
-                  <a href="/usermgmt">
+                  <a href="/users">
                     <div class='span4'>
                       <div class='info-bullet'>
                         <i class='icon-user'></i>
@@ -121,7 +124,7 @@
                   </a>
                 </div>
                 <div class='row'>
-                  <a href="/workflow">
+                  <a href="/undo">
                     <div class='span4'>
                       <div class='info-bullet'>
                         <i class='icon-undo'></i>
