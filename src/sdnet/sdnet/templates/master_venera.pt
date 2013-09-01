@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Substance D</title>
+  <meta name="description" content="Substance D Web Application Development Environment">
+  <meta name="viewport" content="width=device-width">
+  <link href="assets/css/theme_venera_blue.css" media="all" rel="stylesheet" type="text/css" />
+  <!-- <link href="http://fonts.googleapis.com/css?family=Abel:400|Oswald:300,400,700" media="all" rel="stylesheet" type="text/css" /> -->
+  <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700" media="all" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+            <![endif]-->
+            <header id='header'>
+              <div class='navbar navbar-fixed-top'>
+                <div class='navbar-inner'>
+                  <div class='container'>
+                    <a class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collapse'>
+                      <span class='icon-bar'></span>
+                      <span class='icon-bar'></span>
+                      <span class='icon-bar'></span>
+                    </a>
+                    <a href="/" class="brand"><img src="/static/images/capsule-icon-32.png" alt="Substance D Image"/> Substance D</a>
+                    <div class='nav-collapse subnav-collapse collapse pull-right' id='top-navigation'>
+                      <ul class='nav'>
+                        <li class='active'>
+                          <a href="index.html">Home</a>
+                        </li>
+                        <li class='dropdown'>
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Features</a>
+                          <ul class='dropdown-menu'>
+                            <li>
+                              <a href="features/pricing_tables.html">Pricing Table</a>
+                            </li>
+                            <li>
+                              <a href="features/awesome_icons.html">Awesome Icons</a>
+                            </li>
+                            <li>
+                              <a href="features/basic_elements.html">Basic Elements</a>
+                            </li>
+                            <li class='divider'></li>
+                            <li class='nav-header'>Pages Examples</li>
+                            <li>
+                              <a href="features/about_us_page.html">About Us Page</a>
+                            </li>
+                            <li>
+                              <a href="gallery_of_images.html">Gallery of Images</a>
+                            </li>
+                            <li>
+                              <a href="features/not_found_page.html">Page not found</a>
+                            </li>
+                            <li>
+                              <a href="features/coming_soon_page.html">Coming Soon Page</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class='dropdown'>
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation</a>
+                          <ul class='dropdown-menu'>
+                            <li>
+                              <a href="documentation/get_started.html">Get Started</a>
+                            </li>
+                            <li>
+                              <a href="documentation/scaffolding.html">Scaffolding</a>
+                            </li>
+                            <li>
+                              <a href="documentation/base_css.html">Base CSS</a>
+                            </li>
+                            <li>
+                              <a href="documentation/components.html">Components</a>
+                            </li>
+                            <li>
+                              <a href="documentation/javascript.html">Javascript</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class='dropdown'>
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
+                          <ul class='dropdown-menu'>
+                            <li>
+                              <a href="blog/single_post.html">Single Post</a>
+                            </li>
+                            <li>
+                              <a href="blog/two_per_line.html">Multiple Posts (two)</a>
+                            </li>
+                            <li>
+                              <a href="blog/one_per_line.html">Multiple Posts (one)</a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <!-- <div class='top-account-control visible-desktop'>
+                      <a href="features/pricing_tables.html" class="top-create-account">Create Account</a>
+                      <a href="#" class="top-sign-in">Sign In</a>
+                      <div class='login-box'>
+                      <a class='close login-box-close' href='#'>&times;</a>
+                      <h4 class='login-box-head'>Login Form</h4>
+                      <div class='control-group'>
+                      <label>Username</label>
+                      <input class='span2' placeholder='Input username...' type='text'>
+                      </div>
+                      <div class='control-group'>
+                      <label>Password</label>
+                      <input class='span2' placeholder='Input password...' type='text'>
+                      </div>
+                      <div class='login-actions'>
+                      <button class='btn btn-primary'>Log Me In</button>
+                      </div>
+                      </div>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </header>
+
+            <div class='sub-slider-features'>
+              <div class='container' style="margin-bottom:15px;">
+                <h1 class='slider-header'>Build highly dynamic web applications the civilized way</h1>
+              </div>
+              <div class='container'>
+                <div class='row'>
+                  <div class='span4'>
+                    <div class='info-bullet'>
+                      <i class='icon-sitemap'></i>
+                      <h5>Build Custom Sites</h5>
+                      <p>Build highly custom sites of most kinds: content management systems, ecommerce systems, intranets, bespoke websites, and more.</p>
+                    </div>
+                  </div>
+                  <div class='span4'>
+                    <div class='info-bullet'>
+                      <i class='icon-folder-close'></i>
+                      <h5>Admin UI</h5>
+                      <p>Get an out-of-the-box management interface that you can plug custom forms and other management features into.  Handle large amounts of content easily.</p>
+                    </div>
+                  </div>
+                  <div class='span4'>
+                    <div class='info-bullet'>
+                      <i class='icon-user'></i>
+                      <h5>User Management</h5>
+                      <p>Give yourself out-of-the-box user and group management and facilities for changing passwords and password resets.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class='row'>
+                  <div class='span4'>
+                    <div class='info-bullet'>
+                      <i class='icon-lock'></i>
+                      <h5>Built-In Security</h5>
+                      <p>Make highly granular security assertions against database content, allowing for tight access control of specific resources.</p>
+                    </div>
+                  </div>
+                  <div class='span4'>
+                    <div class='info-bullet'>
+                      <i class='icon-search'></i>
+                      <h5>Text Indexing</h5>
+                      <p>Built-in text indexing and search allows your users to find their content without requiring you to configure, manage and learn an external text indexing system.</p>
+                    </div>
+                  </div>
+                  <div class='span4'>
+                    <div class='info-bullet'>
+                      <i class='icon-comments'></i>
+                      <h5>Workflow</h5>
+                      <p>Define workflow states and transitions for types of content, and enforce them.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class='row'>
+                  <div class='span4'>
+                    <div class='info-bullet'>
+                      <i class='icon-undo'></i>
+                      <h5>Undo</h5>
+                      <p>Undo virtually any action taken via the management interface or by a retail user.</p>
+                    </div>
+                  </div>
+                  <div class='span4'>
+                    <div class='info-bullet'>
+                      <i class='icon-dashboard'></i>
+                      <h5>Monitoring</h5>
+                      <p>Performance and availability monitoring is baked in.  Use any <i>statsd</i> provider to set up visibility into your application's performance.</p>
+                    </div>
+                  </div>
+                  <div class='span4'>
+                    <div class='info-bullet'>
+                      <i class='icon-copy'></i>
+                      <h5>Auditing</h5>
+                      <p>Every action taken by each site user is logged into a built-in audit log facility.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <section class='section-wrapper under-slider'>
+              <div class='container'>
+                <div class='row'>
+                  <div class='span12'>
+                    <h3 class='section-header'>Screen Shots</h3>
+                  </div>
+                  <div class='span3'>
+                    <div class='white-card'>
+                      <div class="img-w hover-fader">
+                        <a href="/static/images/adminui-halfsized.png" data-rel="lightbox[gallery]"><img alt="Folder contents management" src="/static/images/adminui-halfsized.png">
+                          <span class="hover-fade">
+                            <i class="icon-zoom-in"></i>
+                          </span>
+                        </a>
+                      </div>
+                      <h5>Folder Contents Management</h5>
+                      <p>Handle lots of content by arranging it into folders within Substance D's resource tree.  Folders can become subsites for your customers.</p>
+                    </div>
+                  </div>
+                  <div class='span3'>
+                    <div class='white-card'>
+                      <div class="img-w hover-fader">
+                        <a href="/static/images/securitymgmt-halfsized.png" data-rel="lightbox[gallery]"><img alt="Security management" src="/static/images/securitymgmt-halfsized.png">
+                          <span class="hover-fade">
+                            <i class="icon-zoom-in"></i>
+                          </span>
+                        </a>
+                      </div>
+                      <h5>Security management</h5>
+                      <p>Each item in the resource tree can have its own authorization policy.  The resource tree allows you to protect folders full of content with the same settings.</p>
+                    </div>
+                  </div>
+                  <div class='span3'>
+                    <div class='white-card'>
+                      <div class="img-w hover-fader">
+                        <a href="/static/images/undo-halfsized.png" data-rel="lightbox[gallery]"><img alt="Undo" src="/static/images/undo-halfsized.png">
+                          <span class="hover-fade">
+                            <i class="icon-zoom-in"></i>
+                          </span>
+                        </a>
+                      </div>
+                      <h5>Undo</h5>
+                      <p>Every action performed by a site user (even retail users) can be undone.  If an administrative user or a retail user makes a mistake, they can undo it immediately.</p>
+                    </div>
+                  </div>
+                  <div class='span3'>
+                    <div class='white-card'>
+                      <div class="img-w hover-fader">
+                        <a href="/static/images/properties-halfsized.png" data-rel="lightbox[gallery]"><img alt="Property management" src="/static/images/properties-halfsized.png">
+                          <span class="hover-fade">
+                            <i class="icon-zoom-in"></i>
+                          </span>
+                        </a>
+                      </div>
+                      <h5>Property Management</h5>
+                      <p>Each piece content stored within Substance D can have its own properties; multiple property "sheets" can be defined for a content type and can be made editable.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class='section-wrapper stripped'>
+              <div class='container'>
+                <div class='row clients-w'>
+                  <div class='span12'>
+                    <h3 class='section-header'>Substance D Users</h3>
+                  </div>
+                  <div class='span2'>
+                    <div class='white-card'>
+                      <img alt="Client-1" src="assets/images/test-square.png" />
+                    </div>
+                  </div>
+                  <div class='span2'>
+                    <div class='white-card'>
+                      <img alt="Client-2" src="assets/images/test-square.png" />
+                    </div>
+                  </div>
+                  <div class='span2'>
+                    <div class='white-card'>
+                      <img alt="Client-3" src="assets/images/test-square.png" />
+                    </div>
+                  </div>
+                  <div class='span2'>
+                    <div class='white-card'>
+                      <img alt="Client-4" src="assets/images/test-square.png" />
+                    </div>
+                  </div>
+                  <div class='span2'>
+                    <div class='white-card'>
+                      <img alt="Client-5" src="assets/images/test-square.png" />
+                    </div>
+                  </div>
+                  <div class='span2'>
+                    <div class='white-card'>
+                      <img alt="Client-6" src="assets/images/test-square.png" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class='section-wrapper stripped'>
+              <div class='container'>
+                <div class='row'>
+                  <div class='span12'>
+                    <h3 class='section-header'>From the Blog</h3>
+                  </div>
+                  <div class='span4'>
+                    <div class='white-card recent-post clearfix'>
+                      <h5 class='recent-post-header'>
+                        <a href="blog/single_post.html">Nullam velit diam, rhoncus sed</a>
+                      </h5>
+                      <div class='post-info clearfix'>
+                        <div class='pull-left'>
+                          <span class='post-date'>January 15, 2011</span>
+                          <a href="blog/single_post.html" class="post-comments">14 Comments</a>
+                        </div>
+                        <div class='pull-right'>
+                          <a href="#" class="post-like"><i class='icon-heart'></i>
+                            250
+                          </a>
+                        </div>
+                      </div>
+                      <img alt="Photo-card-big-1" class="post-image" src="assets/images/test-square.png" />
+                      <p class='post-content separated'>Donec vel turpis non erat luctus ultrices vel sed massa. Quisque commodo venenatis arcu, non volutpat arcu lobortis at. Donec imperdiet nibh id metus adipiscing semper.</p>
+                      <a href="blog/single_post.html" class="btn btn-primary btn-extra pull-right">Read More &gt;</a>
+                    </div>
+                  </div>
+                  <div class='span4'>
+                    <div class='white-card recent-post clearfix'>
+                      <h5 class='recent-post-header'>
+                        <a href="blog/single_post.html">Nullam velit diam, rhoncus sed</a>
+                      </h5>
+                      <div class='post-info clearfix'>
+                        <div class='pull-left'>
+                          <span class='post-date'>January 15, 2011</span>
+                          <a href="blog/single_post.html" class="post-comments">14 Comments</a>
+                        </div>
+                        <div class='pull-right'>
+                          <a href="#" class="post-like"><i class='icon-heart'></i>
+                            250
+                          </a>
+                        </div>
+                      </div>
+                      <img alt="Photo-card-big-2" class="post-image" src="assets/images/test-square.png" />
+                      <p class='post-content separated'>Donec vel turpis non erat luctus ultrices vel sed massa. Quisque commodo venenatis arcu, non volutpat arcu lobortis at. Donec imperdiet nibh id metus adipiscing semper.</p>
+                      <a href="blog/single_post.html" class="btn btn-primary btn-extra pull-right">Read More &gt;</a>
+                    </div>
+                  </div>
+                  <div class='span4'>
+                    <div class='white-card recent-post clearfix'>
+                      <h5 class='recent-post-header'>
+                        <a href="blog/single_post.html">Nullam velit diam, rhoncus sed</a>
+                      </h5>
+                      <div class='post-info clearfix'>
+                        <div class='pull-left'>
+                          <span class='post-date'>January 15, 2011</span>
+                          <a href="blog/single_post.html" class="post-comments">14 Comments</a>
+                        </div>
+                        <div class='pull-right'>
+                          <a href="#" class="post-like"><i class='icon-heart'></i>
+                            250
+                          </a>
+                        </div>
+                      </div>
+                      <img alt="Photo-card-big-6" class="post-image" src="assets/images/test-square.png" />
+                      <p class='post-content separated'>Donec vel turpis non erat luctus ultrices vel sed massa. Quisque commodo venenatis arcu, non volutpat arcu lobortis at. Donec imperdiet nibh id metus adipiscing semper.</p>
+                      <a href="blog/single_post.html" class="btn btn-primary btn-extra pull-right post-btn">Read More &gt;</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- <section class='section-wrapper stripped'>
+            <div class='container'>
+            <div class='row'>
+            <div class='span12'>
+            <h3 class='section-header'>Payment Plans Information</h3>
+            <div class='white-card no-padding'>
+            <div class='pricing-table'>
+            <div class='row'>
+            <div class='span3'>
+            <div class='pricing-plan-w first-plan'>
+            <div class='plan-name'>
+            Free
+            </div>
+            <div class='plan-price-w'>
+            <div class='plan-price-desc'>Starting at</div>
+            <div class='plan-price'>
+            <span class='price-currency'>$</span>
+            <span class='price-self'>0</span>
+            <span class='price-period'>/mo</span>
+            </div>
+            </div>
+            <div class='plan-desc'>
+            <ul>
+            <li>Unlimited bandwidth</li>
+            <li>
+            <strong>100</strong>
+            Products
+            </li>
+            <li>
+            <strong>1GB</strong>
+            Storage
+            </li>
+            <li>
+            <strong>2.0%</strong>
+            Transaction fee
+            </li>
+            </ul>
+            <p>Plan Information: In eu libero tortor, et bibendum tellus. Fusce a libero est.</p>
+            <a href="register.html" class="btn btn-primary btn-large">Select This Plan</a>
+            </div>
+            </div>
+            </div>
+            <div class='span3'>
+            <div class='pricing-plan-w'>
+            <div class='plan-name'>
+            Premium
+            </div>
+            <div class='plan-price-w'>
+            <div class='plan-price-desc'>Starting at</div>
+            <div class='plan-price'>
+            <span class='price-currency'>$</span>
+            <span class='price-self'>15</span>
+            <span class='price-period'>/mo</span>
+            </div>
+            </div>
+            <div class='plan-desc'>
+            <ul>
+            <li>Unlimited bandwidth</li>
+            <li>
+            <strong>500</strong>
+            Products
+            </li>
+            <li>
+            <strong>3GB</strong>
+            Storage
+            </li>
+            <li>
+            <strong>1.8%</strong>
+            Transaction fee
+            </li>
+            </ul>
+            <p>Plan Information: In eu libero tortor, et bibendum tellus. Fusce a libero est.</p>
+            <a href="register.html" class="btn btn-primary btn-large">Select This Plan</a>
+            </div>
+            </div>
+            </div>
+            <div class='span3'>
+            <div class='pricing-plan-w'>
+            <div class='plan-name'>
+            Enterprise
+            </div>
+            <div class='plan-price-w'>
+            <div class='plan-price-desc'>Starting at</div>
+            <div class='plan-price'>
+            <span class='price-currency'>$</span>
+            <span class='price-self'>25</span>
+            <span class='price-period'>/mo</span>
+            </div>
+            </div>
+            <div class='plan-desc'>
+            <ul>
+            <li>Unlimited bandwidth</li>
+            <li>
+            <strong>1000</strong>
+            Products
+            </li>
+            <li>
+            <strong>10GB</strong>
+            Storage
+            </li>
+            <li>
+            <strong>1.6%</strong>
+            Transaction fee
+            </li>
+            </ul>
+            <p>Plan Information: In eu libero tortor, et bibendum tellus. Fusce a libero est.</p>
+            <a href="register.html" class="btn btn-primary btn-large">Select This Plan</a>
+            </div>
+            </div>
+            </div>
+            <div class='span3'>
+            <div class='pricing-plan-w last-plan'>
+            <div class='plan-name'>
+            Unlimited
+            </div>
+            <div class='plan-price-w'>
+            <div class='plan-price-desc'>Starting at</div>
+            <div class='plan-price'>
+            <span class='price-currency'>$</span>
+            <span class='price-self'>50</span>
+            <span class='price-period'>/mo</span>
+            </div>
+            </div>
+            <div class='plan-desc'>
+            <ul>
+            <li>Unlimited bandwidth</li>
+            <li>
+            <strong>2000</strong>
+            Products
+            </li>
+            <li>
+            <strong>20GB</strong>
+            Storage
+            </li>
+            <li>
+            <strong>1.0%</strong>
+            Transaction fee
+            </li>
+            </ul>
+            <p>Plan Information: In eu libero tortor, et bibendum tellus. Fusce a libero est.</p>
+            <a href="register.html" class="btn btn-primary btn-large">Select This Plan</a>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </section> -->
+
+            <footer>
+              <div class='pre-footer'>
+                <div class='container'>
+                  <div class='row'>
+                    <div class='span4'>
+                      <div class='footer-logo'>
+                        <a>Substance<strong>D</strong></a>
+                      </div>
+                      <ul class='footer-address'>
+                        <li>
+                          <strong>Address:</strong>
+                          2850 Collins ave<br/>
+                          Camden, NJ 32432-1343, USA
+                        </li>
+                        <li>
+                          <strong>Phone:</strong>
+                          (324) 234-2343
+                        </li>
+                        <li>
+                          <strong>Fax:</strong>
+                          (324) 366-5423
+                        </li>
+                      </ul>
+                    </div>
+                    <div class='span4'>
+                      <h5 class='footer-header'>Recent Posts</h5>
+                      <ul class='footer-list'>
+                        <li>
+                          <a>Vestibulum auctor dapibus</a>
+                        </li>
+                        <li>
+                          <a>Aliquam tincidunt mauris</a>
+                        </li>
+                        <li>
+                          <a>Lorem ipsum dolor sit</a>
+                        </li>
+                        <li>
+                          <a>Consectetur adipisicing elit</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class='span4'>
+                      <h5 class='footer-header'>Photostream</h5>
+                      <ul class='footer-img-list thumbnails'>
+                        <li class='span1'>
+                          <a class='thumbnail'>
+                            <img alt="8b9890" src="assets/images/test-square.png" />
+                          </a>
+                        </li>
+                        <li class='span1'>
+                          <a class='thumbnail'>
+                            <img alt="8b9890" src="assets/images/test-square.png" />
+                          </a>
+                        </li>
+                        <li class='span1'>
+                          <a class='thumbnail'>
+                            <img alt="8b9890" src="assets/images/test-square.png" />
+                          </a>
+                        </li>
+                        <li class='span1'>
+                          <a class='thumbnail'>
+                            <img alt="8b9890" src="assets/images/test-square.png" />
+                          </a>
+                        </li>
+                        <li class='span1'>
+                          <a class='thumbnail'>
+                            <img alt="8b9890" src="assets/images/test-square.png" />
+                          </a>
+                        </li>
+                        <li class='span1'>
+                          <a class='thumbnail'>
+                            <img alt="8b9890" src="assets/images/test-square.png" />
+                          </a>
+                        </li>
+                        <li class='span1'>
+                          <a class='thumbnail'>
+                            <img alt="8b9890" src="assets/images/test-square.png" />
+                          </a>
+                        </li>
+                        <li class='span1'>
+                          <a class='thumbnail'>
+                            <img alt="8b9890" src="assets/images/test-square.png" />
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='deep-footer'>
+                <div class='container'>
+                  <div class='row'>
+                    <div class='span6'>
+                      <div class='copyright'>Copyright &copy; 2012 Tamerlan Soziev. All rights reserved.</div>
+                    </div>
+                    <div class='span6'>
+                      <ul class='footer-links'>
+                        <li>
+                          <a>Some</a>
+                        </li>
+                        <li>
+                          <a>Footer</a>
+                        </li>
+                        <li>
+                          <a>Policy</a>
+                        </li>
+                        <li>
+                          <a>Terms Of Use</a>
+                        </li>
+                        <li>
+                          <a>Links</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </footer>
+
+            <script src="assets/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+            <script src="assets/js/bootstrap.js" type="text/javascript"></script>
+            <script src="assets/js/prettify.js" type="text/javascript"></script>
+            <script src="assets/js/lightbox.js" type="text/javascript"></script>
+            <script src="assets/js/main.js" type="text/javascript"></script>
+            <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+            <script>
+                var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+                (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+                g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+                s.parentNode.insertBefore(g,s)}(document,'script'));
+            </script>
+            </body>
+          </html>

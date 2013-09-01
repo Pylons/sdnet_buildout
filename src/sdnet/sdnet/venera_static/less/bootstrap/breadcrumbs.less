@@ -1,0 +1,41 @@
+//
+// Breadcrumbs
+// --------------------------------------------------
+
+
+.breadcrumb {
+  margin: 0 0 @baseLineHeight;
+  list-style: none;
+  background-color: #fff;
+  .box-full-shadow();
+
+  > li {
+    display: inline-block;
+    .ie7-inline-block();
+    font-size:18px;
+    margin-right: 0px;
+    background:#fff url('/assets/theme_venera/breadcrumb-white.png') right center no-repeat;
+    padding: 20px 20px;
+    padding-right: 40px;
+
+    a {
+      color: #514D3E;
+      .transition(all 400ms ease);
+    }
+
+    a:hover {
+      padding-right: 4px;
+      text-decoration: none;
+    }
+
+    > .divider {
+      padding: 0 5px;
+      color: #ccc;
+    }
+  }
+
+  > .active {
+    color: #8f8a79;
+    background:none;
+  }
+}

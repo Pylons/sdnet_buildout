@@ -1,0 +1,647 @@
+/* Overwrite some bootstrap styles */
+.navbar-inner {
+  .box-shadow(none);
+  border: none;
+}
+.navbar-inverse .nav .active > a, .navbar-inverse .nav .active > a:hover, .navbar-inverse .nav .active > a:focus {
+  .box-shadow(none);
+}
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+  .box-shadow(none);
+}
+.navbar-inverse .nav li.dropdown.open > .dropdown-toggle, .navbar-inverse .nav li.dropdown.active > .dropdown-toggle, .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle {
+  .box-shadow(none);
+}
+.pagination ul {
+  .box-shadow(none);
+}
+.pagination ul > li > a, .pagination ul > li > span {
+  .box-shadow(none);
+  background-color: #fff;
+  border: none;
+  padding: 5px 15px;
+}
+.nav-pills, .tab-content {
+  .box-shadow(0px 0px 0px 1px @bordersColor);
+}
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover, .nav-tabs > .active > a:focus {
+  .box-shadow(~"0px -1px 0px 0px #7295b0,1px 0px 0px 0px #7295b0,-1px 0px 0px 0px #7295b0");
+}
+.nav-tabs > li > a {
+  .box-shadow(inset 0px -1px 0px 0px @bordersColor);
+}
+/* Accont control links on top right corder, next to top navigation */
+.top-account-control {
+  & > a {
+
+    &.top-sign-in {
+      background-color: #fff;
+      color: @colorHeaders;
+    }
+    &.top-create-account {
+      background-color: #2980B9;
+      color: #fff;
+    }
+    &:hover {
+      background-color: #fff;
+      color: #111;
+    }
+  }
+}
+#homepage-carousel .slider-w .zoomed-browsers-w {
+  padding-top: 0px;
+}
+#homepage-carousel {
+  .carousel-control {
+    color: #71abe5;
+  }
+}
+/* Slider main header styles */
+.slider-header {
+  color: #404b54;
+  text-shadow: 1px 1px 0px #fff;
+  border-bottom: 1px solid #7295b0;
+  .box-shadow(none);
+  strong {
+    color: #2980B9;
+  }
+}
+/* Slider sub header styles */
+.slider-sub-header {
+  color: lighten(#34495E, 20%);
+}
+
+/* Slider styles */
+.slider-w {
+  background: @sliderBackground;
+  /* Call to Action button */
+  .cta {
+    a {
+      .box-shadow(~"0px 0px 6px 1px #eee, 0px 2px 3px 1px #fff inset");
+      border: 1px solid @bordersColorDark;
+
+      &.btn-danger, &.btn-warning, &.btn-info {
+        .box-shadow(1px 1px 2px 2px rgba(0, 0, 0, 0.2));
+      }
+    }
+  }
+}
+/* Area under slider - with icons, can be used for description of features */
+.sub-slider-features {
+  border-top: 1px solid @bordersColorDark;
+  border-bottom: 1px solid @bordersColorDark;
+  background-color: @colorFeatures;
+  .box-shadow(none);
+  padding-top: 50px;
+
+  .info-bullet {
+    text-align: center;
+    margin-bottom: 50px;
+    /* Icon with font awesome */
+    > i {
+      color: #6b92ba;
+      text-shadow: none;
+      margin-bottom: 40px;
+      font-size: 62px;
+      line-height: 64px;
+    }
+    /* Header of the feature */
+    h5 {
+      color: #34495E;
+      text-shadow: none;
+      border-bottom: 1px solid @bordersColorDark;
+      margin-bottom: 15px;
+      padding-bottom: 20px;
+    }
+    /* Feature description */
+    p {
+      color: lighten(#34495E, 20%);
+    }
+  }
+}
+
+.just-stripped {
+  background: none;
+}
+/* Can be used to separte sections of the website */
+.section-wrapper {
+  /* Add a stripped background to a section */
+  &.stripped {
+    background: none;
+  }
+  .section-header {
+    border-bottom: 1px solid #aabbcc;
+    .box-shadow(none);
+    color: @colorHeaders;
+    padding-bottom: 15px;
+  }
+}
+
+
+/* White shadowed block */
+.white-card {
+  background: #fff;
+  // .box-shadow(0px 0px 0px 1px @bordersColor);
+  .box-shadow(none);
+  // .border-radius(6px);
+  padding: 10px;
+  &.extra-padding {
+    padding: 0px;
+  }
+
+  &.just-white {
+    background: #fff;
+  }
+  .img-w {
+    .box-shadow(0px 0px 3px 3px #fff);
+
+    &.hover-fader {
+      .hover-fade {
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+      i {
+        color: #fff;
+      }
+    }
+  }
+
+  h5 {
+    color: @colorHeaders;
+    border-bottom: 1px solid #bbd9ee;
+    .box-shadow(0px 1px 0px #fff);
+    text-shadow: -1px -1px #fff;
+  }
+
+  p {
+    color: @colorHeaders;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+
+/* Testimonials styles */
+.testimonials {
+  /* Client with testimonial */
+  .testimonials-user {
+    .box-shadow(none);
+    margin-bottom: 15px;
+  }
+  .testimonials-user-w {
+    &.active .testimonials-user, &:hover .testimonials-user {
+      border: none;
+      .box-shadow(none);
+    }
+    /* Add a pointer from user avatar to the testimonial text */
+    &.active:before {
+      border-bottom-color: transparent;
+    }
+  }
+  /* Text of testimonial */
+  .testimonials-speech {
+    background:#FFF url('@{imagesPath}quotes.png') 15px 20px no-repeat;
+    .box-shadow(none);
+    padding-right: 0px;
+    font-size: 18px;
+
+    p {
+      border-bottom: 1px solid #bbd9ee;
+      color: @textColor;
+    }
+  }
+}
+
+.accordion-inner {
+  border-bottom: 1px solid lighten(@bordersColor, 10%);
+}
+
+.thumbnail {
+  .box-shadow(none);
+  background: #fff;
+}
+/* Area over the footer */
+.pre-footer {
+  background: @footerBackground;
+  border-top: 10px solid darken( @footerBackground, 5%);
+
+  .thumbnail {
+    .box-shadow(none);
+    background: #fff;
+  }
+  /* Footer logo styles */
+  .footer-logo {
+    a {
+      color: #c4c7be;
+      border-bottom: 5px solid darken( @footerBackground, 5%);
+    }
+    strong {
+      color: #fff;
+    }
+  }
+  /* Company Address information */
+  ul.footer-address {
+    li {
+      color: #fff;
+      strong {
+        color: #c9d3cd;
+      }
+    }
+  }
+  /* Header of a section in footer */
+  .footer-header {
+    border-bottom: 5px solid darken( @footerBackground, 5%);
+    color: #fff;
+  }
+  /* List of items in footer has to have custom styles */
+  .footer-list {
+    color: #fff;
+    li {
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
+/* Deep footer */
+.deep-footer {
+  background-color: @colorDeepFooter;
+  border-top: 2px solid darken(@colorDeepFooter, 5%);
+  /* Copyright information */
+  .copyright {
+    color: #fff;
+  }
+  /* Footer links */
+  .footer-links {
+    li {
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
+
+/* Styling of font awesome showcase */
+#all-icons {
+  ul {
+    li {
+      background-color: #FFF;
+      .box-shadow (0px 0px 6px 2px darken(@bodyBackground, 10%));
+
+      .holder-for-icons {
+        border-bottom: 1px solid darken(@bodyBackground, 20%);
+        i {
+          color: #343838;
+        }
+      }
+      .description-for-icons {
+        background-color: lighten(@bodyBackground, 10%);
+        .box-shadow (inset 0px 2px 1px 0px darken(@bodyBackground, 5%));
+      }
+    }
+  }
+}
+
+
+
+/* Recent posts styles */
+.recent-post {
+  .recent-post-header {
+    border-bottom:1px solid #a4cbe6;
+    .box-shadow(0px 1px 0px 0px #fff);
+    a {
+      color: @colorHeaders;
+    }
+  }
+  .post-info {
+    color: @colorHeaders;
+  }
+  .post-date {
+    border-right:1px solid @colorHeaders;
+  }
+  .post-comments {
+    color: @colorHeaders;
+  }
+  .post-like {
+    background: #E74C3C;
+    color: #fff;
+    border: 1px solid #C0392B;
+    .box-shadow(none);
+    .border-radius(0px);
+    i {
+      color: #fff;
+      text-shadow: none;
+    }
+    &:hover {
+      background-color: #e08066;
+      color: #fff;
+      border-color: #d27156;
+      .box-shadow(inset 1px 1px 1px 0px #efa08b);
+      i {
+        color: #fff;
+        text-shadow: 1px 1px 0px #9a4d38;
+      }
+    }
+  }
+  .post-image {
+    .box-shadow(0px 0px 2px 2px #fff);
+  }
+  .post-content {
+    font-size: 18px;
+  }
+  .separated {
+    border-bottom:1px solid #dfe1d6;
+    .box-shadow(0px 1px 0px 0px #fff);
+  }
+}
+
+/* Accordion */
+.accordion-heading .accordion-toggle {
+  background: none;
+  position: relative;
+  &:before {
+    font-family: FontAwesome;
+    content: "\f055";
+    position: absolute;
+    right: 0.7em;
+    top: 0.7em;
+    font-size: 22px;
+    line-height: 26px;
+    color: #6188af;
+  }
+}
+
+/* Docs */
+.show-grid [class*="span"] {
+  background-color: #3498DB;
+}
+.show-grid:hover [class*="span"] {
+  background: #fff;
+}
+.show-grid .show-grid {
+}
+.show-grid .show-grid [class*="span"] {
+  background-color: #1B8CA6;
+}
+/* Mini layout previews
+-------------------------------------------------- */
+.mini-layout {
+  background-color: #FFF;
+  .box-shadow(3px 3px 0px 0px rgba(0,0,0,.15));
+}
+.mini-layout .mini-layout-body {
+  background-color: #3498DB;
+}
+.mini-layout.fluid .mini-layout-sidebar {
+  background-color: #1B8CA6;
+}
+.bs-docs-sidenav > li > a:hover {
+  background-color: #fff;
+}
+
+/* Venera code examples
+-------------------------------------------------- */
+
+.page-header {
+  border-bottom: 1px solid @bordersColorDark;
+}
+.bs-docs-sidenav.affix {
+  top: 80px;
+}
+/* Base class */
+.bs-docs-example {
+  background: #fff;
+  .box-shadow(2px 2px 4px 0px #b5daef inset);
+  border: 1px solid @bordersColorDark;
+}
+
+/* Echo out a label for the example */
+.bs-docs-example:after {
+  .box-shadow(2px 2px 3px 0px rgba(0, 0, 0, 0.1) inset);
+  background-color: #3498DB;
+  border: 1px solid #30A9C5;
+  color: #fff;
+}
+
+
+.bs-docs-sidenav {
+  background-color: #FFF;
+  .box-shadow(0px 0px 0px 1px @bordersColorDark);
+  li {
+    a {
+      &:hover {
+        background-color: #3498DB;
+        color: #fff;
+      }
+    }
+    &.active a {
+      background-color: #3498DB;
+      color: #fff;
+    }
+  }
+  .icon-chevron-right {
+    margin-top: 0px;
+  }
+}
+.jumbotron {
+  background: #fff;
+  border-bottom: 1px dashed @bordersColorDark;
+
+  .container {
+    background:transparent url('docs-help-icon.png') right top no-repeat;
+  }
+}
+
+.sub-jumbotron {
+  border-bottom: 1px dashed @bordersColorDark;
+  ul {
+    li {
+      a {
+        color: @colorHeaders;
+        background-color: #fff;
+        .box-shadow(none);
+        border: 1px solid @bordersColorDark;
+        .border-radius(0px);
+        &:hover, &.active {
+          .box-shadow(2px 2px 0px #89bfde inset);
+          background-color: #b3d8ed;
+        }
+      }
+    }
+  }
+}
+
+
+/* Responsive tests
+------------------------- */
+.responsive-utilities-test li {
+  color: #999;
+  background-color: #FFF;
+}
+.responsive-utilities-test span {
+  color: #fff;
+  background-color: #5ca61b;
+}
+
+
+/* Single blog post */
+.single-post-w {
+  background-color: #fff;
+  .box-shadow(none);
+  border: none;
+  padding: 0px!important;
+  .post-info {
+    .box-shadow(none);
+    border: 1px solid @bordersColorDark;
+  }
+  .post-content {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+/* Side search widget for blog */
+.blog-side-search {
+  .search-input {
+    border: 2px solid darken(@bodyBackground, 10%);
+    color: darken(@bodyBackground, 30%);
+    background-color: @bodyBackground;
+  }
+}
+
+/* Side tags for blog */
+.blog-side-tags {
+  .side-tag {
+    background-color: @tagColor;
+    color: #fff;
+    text-shadow: -1px -1px 0px darken(@tagColor, 10%);
+    .box-shadow(2px 2px 0px darken(@tagColor, 10%));
+    font-size: 14px;
+    padding: 5px;
+    margin-left: 0px;
+    height: auto;
+    line-height: 18px;
+
+    &:hover {
+      background-color: none;
+      &:before {
+        border:none;
+      }
+    }
+    &:before {
+      border:none;
+    }
+    &:after {
+      .box-shadow(none);
+      background: @bodyBackground;
+      height: auto;
+      width: auto;
+    }
+  }
+}
+
+/* Side categories for blog */
+.blog-categories {
+  ul {
+    li {
+      a {
+        background-color: lighten(@bodyBackground, 3%);
+        .box-shadow(none);
+        border-bottom: 1px solid #e6e6e6;
+        border-left: 5px solid #fff;
+        color: @bordersColorDark;
+        font-size: 16px;
+
+        &:hover {
+          background-color: #FFF;
+          border-left: 15px solid #C14957;
+        }
+      }
+    }
+  }
+}
+
+/* Recent tweets section for blog */
+.blog-recent-tweets {
+  ul {
+    li {
+      background-color: #FFF;
+      .box-shadow(none);
+      border-bottom: 1px solid #e6e6e6;
+    }
+  }
+}
+
+/* Widget with filled background style */
+.widget-filled {
+  background-color: #FFF;
+  .box-shadow(none);
+  h3 {
+    border-bottom: 1px dashed darken(@bodyBackground, 10%);
+    color: #807e6a;
+  }
+
+  &.widget-yellow {
+    background-color: #fffde3;
+    border: 1px solid #beb97f;
+  }
+}
+/* Widget with transparent background */
+.widget-tp {
+  h3 {
+    border-bottom: 1px solid darken(@bodyBackground, 10%);
+    color: @headerMainColor;
+    i {
+      color: lighten(@headerMainColor, 10%);
+    }
+  }
+}
+
+/* Post author formatting */
+.post-author-w {
+  .post-author-photo {
+    .box-shadow(none);
+    border:5px solid #fff;
+  }
+  .post-author-bio-w {
+    .post-author-name {
+      border-bottom: 1px dashed darken(@bodyBackground, 10%);
+    }
+  }
+}
+/* Styles for transparent forms */
+.form-transparent {
+  input[type="text"], textarea {
+    border-color: darken(@bodyBackground, 30%);
+    background-color: #fff;
+    .box-shadow(inset 1px 1px 2px 0px @bodyBackground);
+  }
+  legend {
+    border-bottom: 1px solid darken(@bodyBackground, 10%);
+  }
+}
+/* Actual post comments styles */
+.post-comments-list {
+  li {
+    border-bottom: 1px dashed darken(@bodyBackground, 20%);
+    /* Comment author photo */
+    .comment-author-photo {
+      .box-shadow(none);
+      border:5px solid #fff;
+    }
+    /* Actual comment text */
+    .comment-content {
+      background-color: lighten(@bodyBackground, 5%);
+      .box-shadow(none);
+      border-bottom: 1px solid lighten(@bordersColor, 20%);
+      padding-bottom: 10px;
+      padding: 0px 0px 10px 10px;
+      font-family: @lightFontFamily;
+
+      /* Add an tip poiting to comment author */
+      &:before {
+        border-color:transparent lighten(@bodyBackground, 5%) transparent transparent;
+      }
+    }
+  }
+}
+

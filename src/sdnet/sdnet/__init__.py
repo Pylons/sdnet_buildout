@@ -27,6 +27,7 @@ def main(global_config, **settings):
     config.include('sdexternaledit')
     config.add_permission('view')
     config.add_static_view('static', 'static', cache_max_age=3600)
+    config.add_static_view('assets', 'venera_static', cache_max_age=3600)
     config.add_indexview(get_pubdate,
                          catalog_name='blog', index_name='pubdate')
     config.add_indexview(get_categories,

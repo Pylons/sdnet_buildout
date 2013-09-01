@@ -1,0 +1,538 @@
+/* Accont control links on top right corder, next to top navigation */
+.top-account-control {
+  & > a {
+
+    &.top-sign-in {
+      background-color: #fff;
+      color: @colorHeaders;
+    }
+    &.top-create-account {
+      background-color: #5DC4DC;
+      color: #fff;
+    }
+    &:hover {
+      background-color: #fff;
+      color: #111;
+    }
+  }
+}
+
+/* Slider main header styles */
+.slider-header {
+  color: #fff;
+  text-shadow: 2px 2px 0px #111;
+  border-bottom: 2px solid darken(#343838, 5%);
+  .box-shadow(0px 2px 0px lighten(#343838, 5%));
+  strong {
+    color: #fff;
+  }
+}
+/* Slider sub header styles */
+.slider-sub-header {
+  color: #aaa;
+}
+
+/* Slider styles */
+.slider-w {
+  // background: #343838 url('@{imagesPath}slider-noise-black-bg.jpg') top left repeat;
+  background: #343838 url('@{imagesPath}slider-noise-black-bg.jpg') top left repeat;
+  /* Call to Action button */
+  .cta {
+    a {
+      .box-shadow(~"0px 0px 6px 1px #111, 0px 2px 3px 1px #fff inset");
+      border: 1px solid #000;
+
+      &.btn-danger, &.btn-warning, &.btn-info {
+        .box-shadow(1px 1px 2px 2px rgba(0, 0, 0, 0.2));
+      }
+    }
+  }
+}
+/* Area under slider - with icons, can be used for description of features */
+.sub-slider-features {
+  border-top: none;
+  border-bottom:3px solid darken(@colorFeatures, 5%);
+  background-color: @colorFeatures;
+  .box-shadow(~"0px -10px 2px 0px rgba(0, 0, 0, 0.2), inset 0px 3px 0px 0px "lighten(@colorFeatures, 5%));
+
+  .info-bullet {
+    text-align: center;
+    /* Icon with font awesome */
+    > i {
+      color: #fff;
+      text-shadow: 4px 4px 0px darken(@colorFeatures, 5%);
+    }
+    /* Header of the feature */
+    h5 {
+      color: #fff;
+      text-shadow: 2px 2px 0px darken(@colorFeatures, 5%);
+      border-bottom:3px solid lighten(@colorFeatures, 5%);
+    }
+    /* Feature description */
+    p {
+      color: #fff;
+    }
+  }
+}
+
+.just-stripped {
+  background:transparent url('@{imagesPath}stripped-bg-blue.png') left top repeat;
+}
+/* Can be used to separte sections of the website */
+.section-wrapper {
+  /* Add a stripped background to a section */
+  &.stripped {
+    background:transparent url('@{imagesPath}stripped-bg-blue.png') left top repeat;
+  }
+  .section-header {
+    border-bottom: 3px solid darken(@bodyBackground, 4%);
+    .box-shadow(0px 1px 0px darken(@bodyBackground, 15%));
+    color: @colorHeaders;
+  }
+}
+
+
+/* White shadowed block */
+.white-card {
+  background-color: #fff;
+  .box-shadow(~"0px 1px 4px 0px #9dc2dc, 2px 2px 1px 0px #fff inset");
+  #gradient > .vertical(#f9fcfe, #fff);
+
+  &.just-white {
+    background: #fff;
+  }
+  .img-w {
+    .box-shadow(0px 0px 3px 3px #fff);
+
+    &.hover-fader {
+      .hover-fade {
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+      i {
+        color: #fff;
+      }
+    }
+  }
+
+  h5 {
+    color: @colorHeaders;
+    border-bottom: 1px solid #bbd9ee;
+    .box-shadow(0px 1px 0px #fff);
+    text-shadow: -1px -1px #fff;
+  }
+
+  p {
+    color: @colorHeaders;
+  }
+}
+
+
+/* Testimonials styles */
+.testimonials {
+  /* Client with testimonial */
+  .testimonials-user {
+    .box-shadow(-3px -3px 0px 0px #a1c8e4);
+    border:5px solid #fff;
+  }
+  .testimonials-user-w {
+    &.active .testimonials-user, &:hover .testimonials-user {
+      .box-shadow(3px 3px 0px 0px #a1c8e4);
+    }
+    /* Add a pointer from user avatar to the testimonial text */
+    &.active:before {
+      border-bottom-color: #fff;
+    }
+  }
+  /* Text of testimonial */
+  .testimonials-speech {
+    background:#FFF url('@{imagesPath}quotes.png') 15px 20px no-repeat;
+    .box-shadow(0px 1px 4px 1px #bbd9ee);
+
+    p {
+      border-bottom: 1px solid #bbd9ee;
+      color: @textColor;
+    }
+  }
+}
+
+
+/* Area over the footer */
+.pre-footer {
+  background:#008C9E;
+  border-top: 10px solid darken(#008C9E, 5%);
+
+  .thumbnail {
+    .box-shadow(none);
+    background: #fff;
+  }
+  /* Footer logo styles */
+  .footer-logo {
+    a {
+      color: #c4c7be;
+      border-bottom: 5px solid darken(#008C9E, 5%);
+    }
+    strong {
+      color: #fff;
+    }
+  }
+  /* Company Address information */
+  ul.footer-address {
+    li {
+      color: #fff;
+      strong {
+        color: #c9d3cd;
+      }
+    }
+  }
+  /* Header of a section in footer */
+  .footer-header {
+    border-bottom: 5px solid darken(#008C9E, 5%);
+    color: #fff;
+  }
+  /* List of items in footer has to have custom styles */
+  .footer-list {
+    color: #fff;
+    li {
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
+/* Deep footer */
+.deep-footer {
+  background-color: @colorDeepFooter;
+  border-top: 2px solid darken(@colorDeepFooter, 5%);
+  /* Copyright information */
+  .copyright {
+    color: #fff;
+  }
+  /* Footer links */
+  .footer-links {
+    li {
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
+
+/* Styling of font awesome showcase */
+#all-icons {
+  ul {
+    li {
+      background-color: #FFF;
+      .box-shadow (0px 0px 6px 2px darken(@bodyBackground, 10%));
+
+      .holder-for-icons {
+        border-bottom: 1px solid darken(@bodyBackground, 20%);
+        i {
+          color: #343838;
+        }
+      }
+      .description-for-icons {
+        background-color: lighten(@bodyBackground, 10%);
+        .box-shadow (inset 0px 2px 1px 0px darken(@bodyBackground, 5%));
+      }
+    }
+  }
+}
+
+
+
+/* Recent posts styles */
+.recent-post {
+  .recent-post-header {
+    border-bottom:1px solid #a4cbe6;
+    .box-shadow(0px 1px 0px 0px #fff);
+    a {
+      color: @colorHeaders;
+    }
+  }
+  .post-info {
+    color: @colorHeaders;
+  }
+  .post-date {
+    border-right:1px solid @colorHeaders;
+  }
+  .post-comments {
+    color: @colorHeaders;
+  }
+  .post-like {
+    background:#cae5f6;
+    color: #0e476e;
+    border: 1px solid #a6cfe9;
+    .box-shadow(inset 1px 1px 1px 0px #fff);
+    i {
+      color: #a6cfe9;
+      text-shadow: 1px 1px 0px #dbebf5, -1px -1px 0px #a6cfe9;
+    }
+    &:hover {
+      background-color: #e08066;
+      color: #fff;
+      border-color: #d27156;
+      .box-shadow(inset 1px 1px 1px 0px #efa08b);
+      i {
+        color: #fff;
+        text-shadow: 1px 1px 0px #9a4d38;
+      }
+    }
+  }
+  .post-image {
+    .box-shadow(0px 0px 2px 2px #fff);
+  }
+  .post-content {
+  }
+  .separated {
+    border-bottom:1px solid #dfe1d6;
+    .box-shadow(0px 1px 0px 0px #fff);
+  }
+}
+
+
+
+/* Docs */
+.show-grid [class*="span"] {
+  background-color: #5DC4DC;
+}
+.show-grid:hover [class*="span"] {
+  background: #fff;
+}
+.show-grid .show-grid {
+}
+.show-grid .show-grid [class*="span"] {
+  background-color: #1B8CA6;
+}
+/* Mini layout previews
+-------------------------------------------------- */
+.mini-layout {
+  background-color: #FFF;
+  .box-shadow(3px 3px 0px 0px rgba(0,0,0,.15));
+}
+.mini-layout .mini-layout-body {
+  background-color: #5DC4DC;
+}
+.mini-layout.fluid .mini-layout-sidebar {
+  background-color: #1B8CA6;
+}
+.bs-docs-sidenav > li > a:hover {
+  background-color: #fff;
+}
+
+/* Venera code examples
+-------------------------------------------------- */
+
+.page-header {
+  border-bottom: 3px solid #b5daef;
+}
+
+/* Base class */
+.bs-docs-example {
+  background:transparent url('@{imagesPath}stripped-bg-blue.png') left top repeat;
+  .box-shadow(2px 2px 4px 0px #b5daef inset);
+  border: 1px solid #98cae6;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+
+/* Echo out a label for the example */
+.bs-docs-example:after {
+  .box-shadow(2px 2px 3px 0px rgba(0, 0, 0, 0.1) inset);
+  background-color: #5DC4DC;
+  border: 1px solid #30A9C5;
+  color: #fff;
+}
+
+
+.bs-docs-sidenav {
+  background-color: #FFF;
+  .box-shadow(3px 3px 0px 0px rgba(0, 0, 0, 0.2));
+  li {
+    a {
+      &:hover {
+        background-color: #5DC4DC;
+        color: #fff;
+      }
+    }
+    &.active a {
+      background-color: #5DC4DC;
+      color: #fff;
+    }
+  }
+}
+.jumbotron {
+  background: #fff;
+  border-bottom: 1px dashed #9ad1f0;
+
+  .container {
+    background:transparent url('docs-help-icon.png') right top no-repeat;
+  }
+}
+
+.sub-jumbotron {
+  border-bottom: 1px dashed #9ad1f0;
+  ul {
+    li {
+      a {
+        color: @colorHeaders;
+        background-color: #fff;
+        .box-shadow(2px 2px 0px #a4cee6);
+        &:hover, &.active {
+          .box-shadow(2px 2px 0px #89bfde inset);
+          background-color: #b3d8ed;
+        }
+      }
+    }
+  }
+}
+
+
+/* Responsive tests
+------------------------- */
+.responsive-utilities-test li {
+  color: #999;
+  background-color: #FFF;
+}
+.responsive-utilities-test span {
+  color: #fff;
+  background-color: #5ca61b;
+}
+
+
+/* Single blog post */
+.single-post-w {
+  background-color: #fff;
+  .box-shadow(0px 1px 4px 1px darken(@bodyBackground, 15%));
+}
+
+/* Side search widget for blog */
+.blog-side-search {
+  .search-input {
+    border: 2px solid darken(@bodyBackground, 10%);
+    color: darken(@bodyBackground, 30%);
+    background-color: @bodyBackground;
+  }
+}
+
+/* Side tags for blog */
+.blog-side-tags {
+  .side-tag {
+    background-color: @tagColor;
+    color: #fff;
+    text-shadow: -1px -1px 0px darken(@tagColor, 10%);
+    .box-shadow(2px 2px 0px darken(@tagColor, 10%));
+    &:hover {
+      background-color: @tagHoverColor;
+      &:before {
+        border-color:transparent @tagHoverColor transparent transparent;
+      }
+    }
+    &:before {
+      border-color:transparent @tagColor transparent transparent;
+    }
+    &:after {
+      .box-shadow(-2px -2px 0px darken(@tagColor, 10%));
+      background: @bodyBackground;
+    }
+  }
+}
+
+/* Side categories for blog */
+.blog-categories {
+  ul {
+    li {
+      a {
+        background-color: lighten(@bodyBackground, 3%);
+        .box-shadow(1px 1px 2px darken(@bodyBackground, 10%));
+        border-left: 5px solid #fff;
+        color: @colorHeaders;
+
+        &:hover {
+          background-color: #FFF;
+          border-left: 15px solid #C14957;
+        }
+      }
+    }
+  }
+}
+
+/* Recent tweets section for blog */
+.blog-recent-tweets {
+  ul {
+    li {
+      background-color: #FFF;
+      .box-shadow(2px 2px 1px rgba(0,0,0,.07));
+    }
+  }
+}
+
+/* Widget with filled background style */
+.widget-filled {
+  background-color: #FFF;
+  .box-shadow(2px 2px 2px rgba(0,0,0,.07));
+  h3 {
+    border-bottom: 1px dashed darken(@bodyBackground, 10%);
+    color: #807e6a;
+  }
+
+  &.widget-yellow {
+    background-color: #fffde3;
+  }
+}
+/* Widget with transparent background */
+.widget-tp {
+  h3 {
+    border-bottom: 1px solid darken(@bodyBackground, 10%);
+    color: @headerMainColor;
+    i {
+      color: lighten(@headerMainColor, 10%);
+    }
+  }
+}
+
+/* Post author formatting */
+.post-author-w {
+  .post-author-photo {
+    .box-shadow(3px 3px 0px 0px #ced0c6);
+    border:5px solid #fff;
+  }
+  .post-author-bio-w {
+    .post-author-name {
+      border-bottom: 1px dashed darken(@bodyBackground, 10%);
+    }
+  }
+}
+/* Styles for transparent forms */
+.form-transparent {
+  input[type="text"], textarea {
+    border-color: darken(@bodyBackground, 30%);
+    background-color: #fff;
+    .box-shadow(inset 1px 1px 2px 0px @bodyBackground);
+  }
+  legend {
+    border-bottom: 1px solid darken(@bodyBackground, 10%);
+  }
+}
+/* Actual post comments styles */
+.post-comments-list {
+  li {
+    border-bottom: 1px dashed darken(@bodyBackground, 20%);
+    /* Comment author photo */
+    .comment-author-photo {
+      .box-shadow(3px 3px 0px 0px #ced0c6);
+      border:5px solid #fff;
+    }
+    /* Actual comment text */
+    .comment-content {
+      background-color: lighten(@bodyBackground, 5%);
+      .box-shadow(1px 1px 4px 1px darken(@bodyBackground, 5%));
+      font-family: @lightFontFamily;
+
+      /* Add an tip poiting to comment author */
+      &:before {
+        border-color:transparent lighten(@bodyBackground, 5%) transparent transparent;
+      }
+    }
+  }
+}
+

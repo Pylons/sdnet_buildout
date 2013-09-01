@@ -1,0 +1,41 @@
+//
+// Responsive: Tablet to desktop
+// --------------------------------------------------
+
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+  // Fixed grid
+  #grid > .core(@gridColumnWidth768, @gridGutterWidth768);
+
+  // Fluid grid
+  #grid > .fluid(@fluidGridColumnWidth768, @fluidGridGutterWidth768);
+
+  // Input grid
+  #grid > .input(@gridColumnWidth768, @gridGutterWidth768);
+
+  // No need to reset .thumbnails here since it's the same @gridGutterWidth
+
+  // 3 Moving Browsers wrapper
+  .slider-w .slider-browsers-w{
+    height: 200px;
+  }
+  // Slider inner items
+  .slider-w .item {
+    height: 440px;
+    padding-top: 30px;
+  }
+  .slider-header {
+    font-size: 34px;
+  }
+
+  // Hide thumbnail description for smaller screens (tablets)
+  .thumbnail-hover-title {
+    border-bottom: none;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+  .thumbnail-hover-text {
+    display: none;
+  }
+}

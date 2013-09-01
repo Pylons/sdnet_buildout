@@ -17,3 +17,4 @@ src/pyramid
 .coverage
 include/
 lib/
+tmp/
