@@ -307,7 +307,7 @@
                         </li>
                         <li class='span1'>
                           <a class='thumbnail'>
-                            <img alt="Carlos de la Guardia" title="Carlos de la Guardia" src="assets/images/test-square.png" />
+                            <img alt="Carlos de la Guardia" title="Carlos de la Guardia" src="/static/images/cguardia.jpg" />
                           </a>
                         </li>
                       </ul>
@@ -327,9 +327,6 @@
                       <ul class='footer-links'>
                         <li>
                           <a href="http://www.pylonsproject.org">A Pylons Project</a>
-                        </li>
-                        <li>
-                          <a href="https://agendaless.com">By Agendaless Consulting</a>
                         </li>
                       </ul>
                     </div>
