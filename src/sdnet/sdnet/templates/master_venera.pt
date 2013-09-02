@@ -13,6 +13,32 @@
     <!-- Fav icons -->
     <link rel="shortcut icon"
           href="${request.static_url('substanced.sdi:static/img/favicon.ico')}"/>
+    <style type="text/css">
+     /* copyright link hover */
+     .deep-footer .copyright a:hover {
+       color: #588799;
+       text-transform: uppercase;
+     }
+     /* tweets */
+     .user {
+       float: left;
+       margin-right: 20px;
+     }
+     .user a > span span {
+       display: none;
+     }
+     .user a > span {
+       display: block;
+       font-size: 11px;
+       font-weight: bold;
+     }
+     .user a img {
+       margin-left: 15px;
+     }
+     .timePosted {
+       font-size: 11px;
+     }
+    </style>
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -326,7 +352,7 @@
     <script src="assets/js/lightbox.js" type="text/javascript"></script>
     <script src="assets/js/main.js" type="text/javascript"></script>
     <!-- Get SubstanceD tweets -->
-    <script src="assets/js/twitter.js" type="text/javascript"></script>
+    <script src="/static/twitter.js" type="text/javascript"></script>
     <script type="text/javascript">
      function handleTweets(tweets){
        var x = tweets.length;
