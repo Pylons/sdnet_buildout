@@ -29,7 +29,7 @@ from .resources import TimelineEventSchema
 
 def _namespace(context, **kw):
     root = find_root(context)
-    ns = {'master': get_renderer('templates/master_venera.pt').implementation(),
+    ns = {'master': get_renderer('templates/master.pt').implementation(),
           'nav_links': root.nav_links,
          }
     ns.update(kw)
