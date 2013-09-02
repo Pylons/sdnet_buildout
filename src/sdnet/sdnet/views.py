@@ -13,8 +13,8 @@ from pyramid.url import resource_url
 from pyramid.view import view_config
 from sddci.schema import update_dci
 from substanced.sdi import mgmt_view
-from substanced.sdi.views.file import AddFileView as AddFileView_
-from substanced.sdi.views.folder import AddFolderView as AddFolderView_
+from substanced.file.views import AddFileView as AddFileView_
+from substanced.folder.views import AddFolderView as AddFolderView_
 from substanced.form import FormView
 from substanced.interfaces import IFolder
 from substanced.objectmap import find_objectmap
