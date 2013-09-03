@@ -10,6 +10,7 @@
     <meta name="description" content="Substance D Web Application Server">
     <meta name="viewport" content="width=device-width">
     <link href="/assets/css/theme_venera_blue.css" media="all" rel="stylesheet" type="text/css" />
+    <metal:title metal:define-slot="stylesheets"/>
     <!-- Fav icons -->
     <link rel="shortcut icon"
           href="${request.static_url('substanced.sdi:static/img/favicon.ico')}"/>
@@ -38,12 +39,47 @@
      .timePosted {
        font-size: 11px;
      }
+
+     .ribbon {
+       background-color: #a00;
+       overflow: hidden;
+       /* top right corner */
+       position: absolute;
+       left: -3em;
+       top: 1.5em;
+       z-index: 1000000;
+       /* 45 deg ccw rotation */
+       -moz-transform: rotate(-45deg);
+       -webkit-transform: rotate(-45deg);
+       /* shadow */
+       -moz-box-shadow: 0 0 1em #888;
+       -webkit-box-shadow: 0 0 1em #888;
+     }
+
+     .ribbon a {
+       border: 1px solid #faa;
+       color: #fff;
+       display: block;
+       font: bold 81.25% 'Helvetiva Neue', Helvetica, Arial, sans-serif;
+       margin: 0.05em 0 0.075em 0;
+       padding: 0.5em 3.5em;
+       text-align: center;
+       text-decoration: none;
+       /* shadow */
+       text-shadow: 0 0 0.5em #444;
+     }
+
     </style>
   </head>
   <body>
     <!--[if lt IE 7]>
     <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
     <![endif]-->
+
+  <div class="ribbon">
+    <a href="/unreleased" title="Unreleased Software">Unreleased</a>
+  </div>
+
     <header id='header'>
       <div class='navbar navbar-fixed-top'>
         <div class='navbar-inner'>
@@ -100,180 +136,182 @@
       </div>
     </header>
 
-    <div class='sub-slider-features'>
-      <div class='container' style="margin-bottom:15px;">
-        <h1 class='slider-header'>Build civilized web applications</h1>
+    <metal:body metal:define-slot="body-content">
+      <div class='sub-slider-features'>
+        <div class='container' style="margin-bottom:15px;">
+          <h1 class='slider-header'>Build civilized web applications</h1>
+        </div>
+        <div class='container'>
+          <div class='row'>
+            <a href='/build'>
+              <div class='span4'>
+                <div class='info-bullet'>
+                  <i class='icon-sitemap'></i>
+                  <h5>Build Custom Sites</h5>
+                  <p>Build highly custom sites of most kinds: content management systems, ecommerce systems, intranets, bespoke websites, and more.</p>
+                </div>
+              </div>
+            </a>
+            <a href="/admin">
+              <div class='span4'>
+                <div class='info-bullet'>
+                  <i class='icon-folder-close'></i>
+                  <h5>Admin UI</h5>
+                  <p>Get an out-of-the-box management interface that you can plug custom forms and other management features into.  Handle large amounts of content easily.</p>
+                </div>
+              </div>
+            </a>
+            <a href="/users">
+              <div class='span4'>
+                <div class='info-bullet'>
+                  <i class='icon-user'></i>
+                  <h5>User Management</h5>
+                  <p>Give yourself out-of-the-box user and group management and facilities for changing passwords and password resets.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class='row'>
+            <a href="/security">
+              <div class='span4'>
+                <div class='info-bullet'>
+                  <i class='icon-lock'></i>
+                  <h5>Built-In Security</h5>
+                  <p>Make highly granular security assertions against database content, allowing for tight access control of specific resources.</p>
+                </div>
+              </div>
+            </a>
+            <a href="/indexing">
+              <div class='span4'>
+                <div class='info-bullet'>
+                  <i class='icon-search'></i>
+                  <h5>Text Indexing</h5>
+                  <p>Built-in text indexing and search allows your users to find their content without requiring you to configure, manage and learn an external text indexing system.</p>
+                </div>
+              </div>
+            </a>
+            <a href="/workflow">
+              <div class='span4'>
+                <div class='info-bullet'>
+                  <i class='icon-comments'></i>
+                  <h5>Workflow</h5>
+                  <p>Define workflow states and transitions for types of content, and enforce them.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class='row'>
+            <a href="/undo">
+              <div class='span4'>
+                <div class='info-bullet'>
+                  <i class='icon-undo'></i>
+                  <h5>Undo</h5>
+                  <p>Undo virtually any action taken via the management interface or by a retail user.</p>
+                </div>
+              </div>
+            </a>
+            <a href="/monitoring">
+              <div class='span4'>
+                <div class='info-bullet'>
+                  <i class='icon-dashboard'></i>
+                  <h5>Monitoring</h5>
+                  <p>Performance and availability monitoring is baked in.  Use any <i>statsd</i> provider to set up visibility into your application's performance.</p>
+                </div>
+              </div>
+            </a>
+            <a href="/auditing">
+              <div class='span4'>
+                <div class='info-bullet'>
+                  <i class='icon-copy'></i>
+                  <h5>Auditing</h5>
+                  <p>Every action taken by each site user is logged into a built-in audit log facility.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
-      <div class='container'>
-        <div class='row'>
-          <a href='/build'>
-            <div class='span4'>
-              <div class='info-bullet'>
-                <i class='icon-sitemap'></i>
-                <h5>Build Custom Sites</h5>
-                <p>Build highly custom sites of most kinds: content management systems, ecommerce systems, intranets, bespoke websites, and more.</p>
+      <section class='section-wrapper under-slider'>
+        <div class='container'>
+          <div class='row'>
+            <div class='span12'>
+              <h3 class='section-header'>Screenshots</h3>
+            </div>
+            <div class='span3'>
+              <div class='white-card'>
+                <div class="img-w hover-fader">
+                  <a href="/static/images/adminui.png" data-rel="lightbox[gallery]"><img alt="Folder contents management" src="/static/images/adminui.png">
+                    <span class="hover-fade">
+                      <i class="icon-zoom-in"></i>
+                    </span>
+                  </a>
+                </div>
+                <h5>Folder contents</h5>
+                <p>Handle lots of content by arranging it into folders within Substance D's resource tree.  Folders can become subsites for your customers.  Realtime updates when other users edit.</p>
               </div>
             </div>
-          </a>
-          <a href="/admin">
-            <div class='span4'>
-              <div class='info-bullet'>
-                <i class='icon-folder-close'></i>
-                <h5>Admin UI</h5>
-                <p>Get an out-of-the-box management interface that you can plug custom forms and other management features into.  Handle large amounts of content easily.</p>
+            <div class='span3'>
+              <div class='white-card'>
+                <div class="img-w hover-fader">
+                  <a href="/static/images/securitymgmt.png" data-rel="lightbox[gallery]"><img alt="Security management" src="/static/images/securitymgmt.png">
+                    <span class="hover-fade">
+                      <i class="icon-zoom-in"></i>
+                    </span>
+                  </a>
+                </div>
+                <h5>Security management</h5>
+                <p>Each item in the resource tree can have its own authorization policy.  The resource tree allows you to protect all the content in a folder and any of its subfolders with the same settings.</p>
               </div>
             </div>
-          </a>
-          <a href="/users">
-            <div class='span4'>
-              <div class='info-bullet'>
-                <i class='icon-user'></i>
-                <h5>User Management</h5>
-                <p>Give yourself out-of-the-box user and group management and facilities for changing passwords and password resets.</p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class='row'>
-          <a href="/security">
-            <div class='span4'>
-              <div class='info-bullet'>
-                <i class='icon-lock'></i>
-                <h5>Built-In Security</h5>
-                <p>Make highly granular security assertions against database content, allowing for tight access control of specific resources.</p>
-              </div>
-            </div>
-          </a>
-          <a href="/indexing">
-            <div class='span4'>
-              <div class='info-bullet'>
-                <i class='icon-search'></i>
-                <h5>Text Indexing</h5>
-                <p>Built-in text indexing and search allows your users to find their content without requiring you to configure, manage and learn an external text indexing system.</p>
-              </div>
-            </div>
-          </a>
-          <a href="/workflow">
-            <div class='span4'>
-              <div class='info-bullet'>
-                <i class='icon-comments'></i>
-                <h5>Workflow</h5>
-                <p>Define workflow states and transitions for types of content, and enforce them.</p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class='row'>
-          <a href="/undo">
-            <div class='span4'>
-              <div class='info-bullet'>
-                <i class='icon-undo'></i>
+            <div class='span3'>
+              <div class='white-card'>
+                <div class="img-w hover-fader">
+                  <a href="/static/images/undo.png" data-rel="lightbox[gallery]"><img alt="Undo" src="/static/images/undo.png">
+                    <span class="hover-fade">
+                      <i class="icon-zoom-in"></i>
+                    </span>
+                  </a>
+                </div>
                 <h5>Undo</h5>
-                <p>Undo virtually any action taken via the management interface or by a retail user.</p>
+                <p>Every action performed by a site user (even retail users) can be undone.  If an administrative user or a retail user makes a mistake, they can undo it immediately.</p>
               </div>
             </div>
-          </a>
-          <a href="/monitoring">
-            <div class='span4'>
-              <div class='info-bullet'>
-                <i class='icon-dashboard'></i>
-                <h5>Monitoring</h5>
-                <p>Performance and availability monitoring is baked in.  Use any <i>statsd</i> provider to set up visibility into your application's performance.</p>
+            <div class='span3'>
+              <div class='white-card'>
+                <div class="img-w hover-fader">
+                  <a href="/static/images/properties.png" data-rel="lightbox[gallery]"><img alt="Property management" src="/static/images/properties.png">
+                    <span class="hover-fade">
+                      <i class="icon-zoom-in"></i>
+                    </span>
+                  </a>
+                </div>
+                <h5>Property Management</h5>
+                <p>Each piece content stored within Substance D can have its own properties; multiple property "sheets" can be defined for a content type and can be made editable.</p>
               </div>
-            </div>
-          </a>
-          <a href="/auditing">
-            <div class='span4'>
-              <div class='info-bullet'>
-                <i class='icon-copy'></i>
-                <h5>Auditing</h5>
-                <p>Every action taken by each site user is logged into a built-in audit log facility.</p>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-    <section class='section-wrapper under-slider'>
-      <div class='container'>
-        <div class='row'>
-          <div class='span12'>
-            <h3 class='section-header'>Screenshots</h3>
-          </div>
-          <div class='span3'>
-            <div class='white-card'>
-              <div class="img-w hover-fader">
-                <a href="/static/images/adminui.png" data-rel="lightbox[gallery]"><img alt="Folder contents management" src="/static/images/adminui.png">
-                  <span class="hover-fade">
-                    <i class="icon-zoom-in"></i>
-                  </span>
-                </a>
-              </div>
-              <h5>Folder contents</h5>
-              <p>Handle lots of content by arranging it into folders within Substance D's resource tree.  Folders can become subsites for your customers.  Realtime updates when other users edit.</p>
-            </div>
-          </div>
-          <div class='span3'>
-            <div class='white-card'>
-              <div class="img-w hover-fader">
-                <a href="/static/images/securitymgmt.png" data-rel="lightbox[gallery]"><img alt="Security management" src="/static/images/securitymgmt.png">
-                  <span class="hover-fade">
-                    <i class="icon-zoom-in"></i>
-                  </span>
-                </a>
-              </div>
-              <h5>Security management</h5>
-              <p>Each item in the resource tree can have its own authorization policy.  The resource tree allows you to protect all the content in a folder and any of its subfolders with the same settings.</p>
-            </div>
-          </div>
-          <div class='span3'>
-            <div class='white-card'>
-              <div class="img-w hover-fader">
-                <a href="/static/images/undo.png" data-rel="lightbox[gallery]"><img alt="Undo" src="/static/images/undo.png">
-                  <span class="hover-fade">
-                    <i class="icon-zoom-in"></i>
-                  </span>
-                </a>
-              </div>
-              <h5>Undo</h5>
-              <p>Every action performed by a site user (even retail users) can be undone.  If an administrative user or a retail user makes a mistake, they can undo it immediately.</p>
-            </div>
-          </div>
-          <div class='span3'>
-            <div class='white-card'>
-              <div class="img-w hover-fader">
-                <a href="/static/images/properties.png" data-rel="lightbox[gallery]"><img alt="Property management" src="/static/images/properties.png">
-                  <span class="hover-fade">
-                    <i class="icon-zoom-in"></i>
-                  </span>
-                </a>
-              </div>
-              <h5>Property Management</h5>
-              <p>Each piece content stored within Substance D can have its own properties; multiple property "sheets" can be defined for a content type and can be made editable.</p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class='section-wrapper stripped'>
-      <div class='container'>
-        <div class='row clients-w'>
-          <div class='span12'>
-            <h3 class='section-header'>Substance D Users</h3>
-          </div>
-          <div class='span2'>
-            <div class='white-card'>
-              <a href="http://www.newcars.com"><img alt="Cars.com" src="/static/images/carslogo.png" /></a>
+      </section>
+      <section class='section-wrapper stripped'>
+        <div class='container'>
+          <div class='row clients-w'>
+            <div class='span12'>
+              <h3 class='section-header'>Substance D Users</h3>
             </div>
-          </div>
-          <div class='span2'>
-            <div class='white-card'>
-              <a href="https://store.kuiu.com"><img alt="KUIU" src="/static/images/kuiulogo.png" /></a>
+            <div class='span2'>
+              <div class='white-card'>
+                <a href="http://www.newcars.com"><img alt="Cars.com" src="/static/images/carslogo.png" /></a>
+              </div>
+            </div>
+            <div class='span2'>
+              <div class='white-card'>
+                <a href="https://store.kuiu.com"><img alt="KUIU" src="/static/images/kuiulogo.png" /></a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </metal:body>
     <footer>
       <div class='pre-footer'>
         <div class='container'>
@@ -376,5 +414,6 @@
                     g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
                     s.parentNode.insertBefore(g,s)}(document,'script'));
     </script>
+    <metal:title metal:define-slot="scripts"/>
   </body>
 </html>
