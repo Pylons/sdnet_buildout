@@ -8,6 +8,15 @@
     font-size: 24px;
     line-height: 30px;
   }
+
+  .single-post-w .post-content dt {
+    line-height: 40px;
+  }
+
+  .single-post-w .post-content dd {
+    margin-bottom: 20px;
+  }
+
  </style>
 
 </head>
