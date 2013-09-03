@@ -1,5 +1,3 @@
-import datetime
-
 import colander
 import deform.widget
 from persistent import Persistent
@@ -90,17 +88,20 @@ class File(File_):
 def context_is_a_document(context, request):
     return request.registry.content.istype(context, 'Document')
 
-def _update_modified_modifier(context, request):
-    context.modified = datetime.datetime.utcnow()
-    context.modifier = request.user.__name__
-
-
 class DocumentSchema(Schema):
     name = NameSchemaNode(
         editing=context_is_a_document,
         )
     title = colander.SchemaNode(
         colander.String(),
+        )
+    icon = colander.SchemaNode(
+        colander.String(),
+        missing='',
+        )
+    image = colander.SchemaNode(
+        colander.String(),
+        missing='',
         )
     body = colander.SchemaNode(
         colander.String(),
@@ -134,6 +135,8 @@ class Document(Persistent):
     name = renamer()
     body = ''
     body_format = 'rst'
+    icon = ''
+    image = ''
 
     def __init__(self, title='', body='', body_format=''):
         self.title = title

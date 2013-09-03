@@ -2,10 +2,46 @@
       metal:use-macro="master">
 <head>
  <title metal:fill-slot="head-title">${title}</title>
+ <style type="text/css" metal:fill-slot="head-stylesheets">
+  .single-post-w .post-content {
+    font-family: "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+  }
+ </style>
+
 </head>
 <body>
- <h1 metal:fill-slot="body-title">${title}</h1>
- <div metal:fill-slot="body-content"
-      tal:content="structure body">BODY</div>
+  <div metal:fill-slot="body-content">
+    <section class="section-wrapper post-w">
+      <div class='container'>
+        <div class='row'>
+          <div class='span10'>
+            <div class='single-post-w'>
+              <h1 class='post-title'>
+                <i tal:condition="context.icon" 
+                   class='icon-${context.icon}'></i> ${title}
+              </h1>
+              <div class='post-info'>
+                <span class='info-item'>
+                   by ${context.creator}
+                </span>
+                <span class='info-item'>
+                   Last Updated: ${context.modified.strftime('%Y/%m/%d')}
+                </span>
+              </div>
+              <div class='single-post-image bottom decor-image'>
+                <img tal:condition="context.image" alt="${context.image}" 
+                     src="${context.image}" />
+              </div>
+              <div class="post-content">
+                <tal:body content="structure body">BODY</tal:body>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 </body>
 </html>
