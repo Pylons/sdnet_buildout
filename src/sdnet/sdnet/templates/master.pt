@@ -6,11 +6,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Substance D Web Application Server</title>
+    <metal:title define-slot="head-title">
+      <title>Substance D Web Application Server</title>
+    </metal:title>
     <meta name="description" content="Substance D Web Application Server">
     <meta name="viewport" content="width=device-width">
     <link href="/assets/css/theme_venera_blue.css" media="all" rel="stylesheet" type="text/css" />
-    <metal:title metal:define-slot="stylesheets"/>
+    <metal:stylesheets define-slot="stylesheets"/>
     <!-- Fav icons -->
     <link rel="shortcut icon"
           href="${request.static_url('substanced.sdi:static/img/favicon.ico')}"/>
@@ -136,9 +138,9 @@
       </div>
     </header>
 
-    <metal:body metal:define-slot="content">
+    <metal:body metal:define-slot="body-title"/>
 
-    </metal:body>
+    <metal:body metal:define-slot="body-content"/>
 
     <footer>
       <div class='pre-footer'>

@@ -9,7 +9,6 @@ from substanced.event import subscribe_created
 from substanced.interfaces import MODE_ATCOMMIT
 from substanced.principal import groupfinder
 from substanced.util import find_service
-from substanced.workflow import pub_workflow
 from sddav.authentication import SDIBasicAuthPolicy
 
 from .resources import Root
@@ -28,11 +27,6 @@ def main(global_config, **settings):
     config.add_permission('view')
     config.add_static_view('static', 'static', cache_max_age=3600)
     config.add_static_view('assets', 'static/theme', cache_max_age=3600)
-    config.add_indexview(get_pubdate,
-                         catalog_name='blog', index_name='pubdate')
-    config.add_indexview(get_categories,
-                         catalog_name='blog', index_name='categories')
-    config.add_workflow(pub_workflow, ('Blog Entry', 'Document'))
     secret = settings['substanced.secret']
     # NB: we use the AuthTktAuthenticationPolicy rather than the session
     # authentication policy because using the session policy can cause static
