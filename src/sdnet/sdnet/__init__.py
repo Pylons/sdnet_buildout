@@ -13,7 +13,6 @@ from sddav.authentication import SDIBasicAuthPolicy
 
 from .resources import Root
 
-
 def main(global_config, **settings):
     """ This function returns a Pyramid WSGI application.
     """
@@ -25,8 +24,8 @@ def main(global_config, **settings):
     config.include('sddav')
     config.include('sdexternaledit')
     config.add_permission('view')
-    config.add_static_view('static', 'static', cache_max_age=3600)
-    config.add_static_view('assets', 'static/theme', cache_max_age=3600)
+    config.add_static_view('static', 'static', cache_max_age=86400)
+    config.add_static_view('assets', 'static/theme', cache_max_age=86400)
     secret = settings['substanced.secret']
     # NB: we use the AuthTktAuthenticationPolicy rather than the session
     # authentication policy because using the session policy can cause static
