@@ -46,7 +46,7 @@
        background-color: #a00;
        overflow: hidden;
        /* top right corner */
-       position: absolute;
+       position: fixed;
        left: -3em;
        top: 1.5em;
        z-index: 1000000;
