@@ -138,10 +138,12 @@ class Document(Persistent):
     icon = ''
     image = ''
 
-    def __init__(self, title='', body='', body_format=''):
+    def __init__(self, title='', body='', body_format='', icon='', image=''):
         self.title = title
         self.body = body
         self.body_format = body_format
+        self.icon = icon
+        self.image = image
 
 class RootSchema(RootSchemaBase):
     """ The schema representing site properties. """
