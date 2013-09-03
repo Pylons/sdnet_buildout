@@ -6,7 +6,7 @@
   .single-post-w .post-content {
     font-family: "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 24px;
-    line-height: 30px;
+    line-height: 40px;
   }
 
   .single-post-w .post-content dt {
@@ -15,6 +15,7 @@
 
   .single-post-w .post-content dd {
     margin-bottom: 20px;
+    line-height: 40px;
   }
 
  </style>
