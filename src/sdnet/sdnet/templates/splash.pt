@@ -129,7 +129,7 @@
                   </a>
                 </div>
                 <h5>Security management</h5>
-                <p>Each item in the resource tree can have its own authorization policy.  The resource tree allows you to protect all the content in a folder and any of its subfolders with the same settings.</p>
+                <p>Each item in the resource tree can have its own authorization policy.  The resource tree allows you to protect all the content in a folder and its subfolders with the same settings.</p>
               </div>
             </div>
             <div class='span3'>
