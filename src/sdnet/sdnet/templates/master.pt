@@ -77,7 +77,7 @@
     <![endif]-->
 
   <div class="ribbon">
-    <a href="/unreleased" title="Unreleased Software">Unreleased</a>
+    <a href="/prerelease" title="Software Available only From Version Control">Pre-release</a>
   </div>
 
     <header id='header'>
