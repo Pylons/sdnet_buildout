@@ -2,11 +2,7 @@ from pyramid.authentication import AuthTktAuthenticationPolicy
 from pyramid.config import Configurator
 from pyramid_multiauth import MultiAuthenticationPolicy
 from substanced import root_factory
-from substanced.catalog import catalog_factory
-from substanced.catalog import Field
-from substanced.catalog import Keyword
 from substanced.event import subscribe_created
-from substanced.interfaces import MODE_ATCOMMIT
 from substanced.principal import groupfinder
 from substanced.util import find_service
 from sddav.authentication import SDIBasicAuthPolicy
@@ -53,15 +49,8 @@ def get_categories(resource, default):
     return getattr(resource, 'categories', default)
 
 
-@catalog_factory('blog')
-class BlogCatalogFactory(object):
-    pubdate = Field(action_mode=MODE_ATCOMMIT)
-    categories = Keyword(action_mode=MODE_ATCOMMIT)
-
-
 @subscribe_created(Root)
 def root_created(event):
     root = event.object
     catalogs = find_service(root, 'catalogs')
-    catalogs.add_catalog('blog', update_indexes=True)
     catalogs.add_catalog('dcterms', update_indexes=True)
