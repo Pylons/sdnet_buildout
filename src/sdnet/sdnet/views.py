@@ -3,7 +3,6 @@ from webob import Response
 
 from pyramid.httpexceptions import HTTPFound
 from pyramid.renderers import get_renderer
-from pyramid.url import resource_url
 from pyramid.view import view_config
 from sddci.schema import update_dci
 from substanced.sdi import mgmt_view
@@ -11,7 +10,6 @@ from substanced.file.views import AddFileView as AddFileView_
 from substanced.folder.views import AddFolderView as AddFolderView_
 from substanced.form import FormView
 from substanced.interfaces import IFolder
-from substanced.util import find_catalog
 
 from .resources import Document
 from .resources import DocumentSchema

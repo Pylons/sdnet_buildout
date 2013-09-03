@@ -42,13 +42,6 @@ def main(global_config, **settings):
     config.scan()
     return config.make_wsgi_app()
 
-def get_pubdate(resource, default):
-    return getattr(resource, 'pubdate', default)
-
-def get_categories(resource, default):
-    return getattr(resource, 'categories', default)
-
-
 @subscribe_created(Root)
 def root_created(event):
     root = event.object
