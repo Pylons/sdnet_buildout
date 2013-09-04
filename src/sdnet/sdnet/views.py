@@ -4,7 +4,6 @@ from webob import Response
 from pyramid.httpexceptions import HTTPFound
 from pyramid.renderers import get_renderer
 from pyramid.view import view_config
-from sddci.schema import update_dci
 from substanced.sdi import mgmt_view
 from substanced.file.views import AddFileView as AddFileView_
 from substanced.folder.views import AddFolderView as AddFolderView_
@@ -83,7 +82,6 @@ class AddFolderView(AddFolderView_):
         registry = request.registry
         name = appstruct['name']
         folder = registry.content.create('Folder')
-        update_dci(folder, request, appstruct)
         self.context[name] = folder
         return HTTPFound(location=self.request.sdiapi.mgmt_path(self.context))
 
@@ -102,11 +100,9 @@ class AddFolderView(AddFolderView_):
 class AddFileView(AddFileView_):
 
     def add_success(self, appstruct):
-        request = self.request
         name = appstruct['name']
         super(AddFileView, self).add_success(appstruct)
         file = self.context[name]
-        update_dci(file, request, appstruct)
         return HTTPFound(self.request.sdiapi.mgmt_path(file, '@@properties'))
 
 
@@ -132,7 +128,6 @@ class AddDocumentView(FormView):
         registry = request.registry
         name = appstruct.pop('name')
         document = registry.content.create('Document', **appstruct)
-        update_dci(document, request, appstruct)
         self.context[name] = document
         return HTTPFound(
             self.request.sdiapi.mgmt_path(self.context, '@@contents')

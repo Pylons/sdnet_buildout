@@ -1,15 +1,10 @@
 import colander
 import deform.widget
 from persistent import Persistent
-from sddci.interfaces import IFull
-from sddci.interfaces import IMinimal
-from sddci.schema import MinimalPropertySheet
-from sddci.schema import FullPropertySheet
-from sddci.schema import update_dci
 from substanced.content import content
 from substanced.file import File as File_
-from substanced.file import FilePropertySheet as FPS
-from substanced.file import FileUploadPropertySheet as FUPS
+from substanced.file import FilePropertySheet
+from substanced.file import FileUploadPropertySheet
 from substanced.folder import Folder as Folder_
 from substanced.interfaces import IRoot
 from substanced.property import PropertySheet
@@ -21,48 +16,16 @@ from substanced.util import renamer
 from zope.interface import implementer
 
 
-class DCIPropertySheet(PropertySheet):
-
-    def set(self, struct, omit=()):
-        changed = super(DCIPropertySheet, self).set(struct, omit)
-        if changed:
-            update_dci(self.context, self.request, struct)
-        return changed
-
 #==============================================================================
-# Folder resource (override to add DCI)
+# Folder resource (overrideable content decorator)
 #==============================================================================
 @content(
     'Folder',
     icon='icon-folder-close',
     add_view='add_folder',
-    propertysheets = (
-        ('DCI', MinimalPropertySheet),
-        ),
     )
-@implementer(IMinimal)
 class Folder(Folder_):
     pass
-
-
-#==============================================================================
-# File resource (override to add DCI)
-#==============================================================================
-class FilePropertySheet(FPS):
-
-    def set(self, struct, omit=()):
-        changed = super(FilePropertySheet, self).set(struct, omit)
-        if changed:
-            update_dci(self.context, self.request, struct)
-        return changed
-
-
-class FileUploadPropertySheet(FUPS):
-
-    def set(self, struct):
-        super(FileUploadPropertySheet, self).set(struct)
-        update_dci(self.context, self.request, struct)
-        return True
 
 
 @content(
@@ -73,11 +36,9 @@ class FileUploadPropertySheet(FUPS):
     propertysheets = (
         ('Basic', FilePropertySheet),
         ('Upload', FileUploadPropertySheet),
-        ('DCI', MinimalPropertySheet),
         ),
     catalog = True,
     )
-@implementer(IMinimal)
 class File(File_):
     pass
 
@@ -114,9 +75,18 @@ class DocumentSchema(Schema):
         widget = deform.widget.SelectWidget(
             values=[('rst', 'rst'), ('html', 'html')]),
         )
+    created = colander.SchemaNode(
+        colander.Date(),
+        )
+    modified = colander.SchemaNode(
+        colander.Date(),
+        )
+    author = colander.SchemaNode(
+        colander.String(),
+        )
 
 
-class DocumentPropertySheet(DCIPropertySheet):
+class DocumentPropertySheet(PropertySheet):
     schema = DocumentSchema()
 
 
@@ -126,10 +96,8 @@ class DocumentPropertySheet(DCIPropertySheet):
     add_view='add_document',
     propertysheets = (
             ('Basic', DocumentPropertySheet),
-            ('DCI', FullPropertySheet),
         ),
     )
-@implementer(IFull)
 class Document(Persistent):
 
     name = renamer()
@@ -150,7 +118,7 @@ class RootSchema(RootSchemaBase):
     pass
 
 
-class RootPropertySheet(DCIPropertySheet):
+class RootPropertySheet(PropertySheet):
     schema = RootSchema()
 
 @content(
@@ -158,10 +126,9 @@ class RootPropertySheet(DCIPropertySheet):
     icon='icon-home',
     propertysheets = (
             ('Basic', RootPropertySheet),
-            ('DCI', MinimalPropertySheet),
         ),
     after_create='after_create',
     )
-@implementer(IRoot, IMinimal)
+@implementer(IRoot)
 class Root(RootBase):
     pass

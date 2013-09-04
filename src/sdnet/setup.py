@@ -15,8 +15,6 @@ requires = [
     'waitress',
     'substanced',
     'pyramid_tm',
-    'sddci',
-    'sddav',
     ]
 
 setup(name='sdnet',
