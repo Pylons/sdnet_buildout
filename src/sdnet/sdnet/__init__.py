@@ -1,11 +1,7 @@
 from pyramid.authentication import AuthTktAuthenticationPolicy
 from pyramid.config import Configurator
 from substanced import root_factory
-from substanced.event import subscribe_created
 from substanced.principal import groupfinder
-from substanced.util import find_service
-
-from .resources import Root
 
 def main(global_config, **settings):
     """ This function returns a Pyramid WSGI application.
@@ -33,8 +29,3 @@ def main(global_config, **settings):
     config.scan()
     return config.make_wsgi_app()
 
-@subscribe_created(Root)
-def root_created(event):
-    root = event.object
-    catalogs = find_service(root, 'catalogs')
-    catalogs.add_catalog('dcterms', update_indexes=True)

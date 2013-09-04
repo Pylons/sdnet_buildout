@@ -1,3 +1,4 @@
+import datetime
 import colander
 import deform.widget
 from persistent import Persistent
@@ -14,7 +15,6 @@ from substanced.schema import Schema
 from substanced.schema import NameSchemaNode
 from substanced.util import renamer
 from zope.interface import implementer
-
 
 #==============================================================================
 # Folder resource (overrideable content decorator)
@@ -49,6 +49,14 @@ class File(File_):
 def context_is_a_document(context, request):
     return request.registry.content.istype(context, 'Document')
 
+@colander.deferred
+def today(node, kw):
+    return datetime.datetime.today()
+
+@colander.deferred
+def current_username(node, kw):
+    return kw['request'].user.__name__
+
 class DocumentSchema(Schema):
     name = NameSchemaNode(
         editing=context_is_a_document,
@@ -77,14 +85,16 @@ class DocumentSchema(Schema):
         )
     created = colander.SchemaNode(
         colander.Date(),
+        default=today,
         )
     modified = colander.SchemaNode(
         colander.Date(),
+        default=today,
         )
-    author = colander.SchemaNode(
+    creator = colander.SchemaNode(
         colander.String(),
+        default=current_username,
         )
-
 
 class DocumentPropertySheet(PropertySheet):
     schema = DocumentSchema()
@@ -106,12 +116,29 @@ class Document(Persistent):
     icon = ''
     image = ''
 
-    def __init__(self, title='', body='', body_format='', icon='', image=''):
+    def __init__(
+        self,
+        title='',
+        body='',
+        body_format='',
+        icon='',
+        image='',
+        created=None,
+        modified=None,
+        creator=''
+        ):
         self.title = title
         self.body = body
         self.body_format = body_format
         self.icon = icon
         self.image = image
+        if created is None:
+            created = datetime.datetime.today()
+        if modified is None:
+            modified = datetime.datetime.today()
+        self.created = created
+        self.modified = modified
+        self.creator = creator
 
 class RootSchema(RootSchemaBase):
     """ The schema representing site properties. """
