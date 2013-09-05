@@ -12,7 +12,7 @@
         </div>
         <div class='container'>
           <div class='row'>
-            <a href='/build'>
+            <!-- <a href='/build'> -->
               <div class='span4'>
                 <div class='info-bullet'>
                   <i class='icon-sitemap'></i>
@@ -20,8 +20,8 @@
                   <p>Build highly custom sites of most kinds: content management systems, ecommerce systems, intranets, bespoke websites, and more.</p>
                 </div>
               </div>
-            </a>
-            <a href="/admin">
+              <!-- </a> -->
+              <!-- <a href="/admin"> -->
               <div class='span4'>
                 <div class='info-bullet'>
                   <i class='icon-folder-close'></i>
@@ -29,8 +29,8 @@
                   <p>Get an out-of-the-box management interface that you can plug custom forms and other management features into.  Handle large amounts of content easily.</p>
                 </div>
               </div>
-            </a>
-            <a href="/users">
+              <!-- </a> -->
+              <!-- <a href="/users"> -->
               <div class='span4'>
                 <div class='info-bullet'>
                   <i class='icon-user'></i>
@@ -38,10 +38,10 @@
                   <p>Give yourself out-of-the-box user and group management and facilities for changing passwords and password resets.</p>
                 </div>
               </div>
-            </a>
+              <!-- </a> -->
           </div>
           <div class='row'>
-            <a href="/security">
+            <!-- <a href="/security"> -->
               <div class='span4'>
                 <div class='info-bullet'>
                   <i class='icon-lock'></i>
@@ -49,8 +49,8 @@
                   <p>Make highly granular security assertions against database content, allowing for tight access control of specific resources.</p>
                 </div>
               </div>
-            </a>
-            <a href="/indexing">
+              <!-- </a> -->
+              <!-- <a href="/indexing"> -->
               <div class='span4'>
                 <div class='info-bullet'>
                   <i class='icon-search'></i>
@@ -58,8 +58,8 @@
                   <p>Built-in text indexing and search allows your users to find their content without requiring you to configure, manage and learn an external text indexing system.</p>
                 </div>
               </div>
-            </a>
-            <a href="/workflow">
+              <!-- </a> -->
+              <!-- <a href="/workflow"> -->
               <div class='span4'>
                 <div class='info-bullet'>
                   <i class='icon-comments'></i>
@@ -67,10 +67,10 @@
                   <p>Define workflow states and transitions for types of content, and enforce them.</p>
                 </div>
               </div>
-            </a>
+              <!-- </a> -->
           </div>
           <div class='row'>
-            <a href="/undo">
+            <!-- <a href="/undo"> -->
               <div class='span4'>
                 <div class='info-bullet'>
                   <i class='icon-undo'></i>
@@ -78,8 +78,8 @@
                   <p>Undo virtually any action taken via the management interface or by a retail user.</p>
                 </div>
               </div>
-            </a>
-            <a href="/monitoring">
+              <!-- </a> -->
+              <!-- <a href="/monitoring"> -->
               <div class='span4'>
                 <div class='info-bullet'>
                   <i class='icon-dashboard'></i>
@@ -87,8 +87,8 @@
                   <p>Performance and availability monitoring is baked in.  Use any <i>statsd</i> provider to set up visibility into your application's performance.</p>
                 </div>
               </div>
-            </a>
-            <a href="/auditing">
+              <!-- </a> -->
+              <!-- <a href="/auditing"> -->
               <div class='span4'>
                 <div class='info-bullet'>
                   <i class='icon-copy'></i>
@@ -96,7 +96,7 @@
                   <p>Every action taken by each site user is logged into a built-in audit log facility.</p>
                 </div>
               </div>
-            </a>
+              <!-- </a> -->
           </div>
         </div>
       </div>
