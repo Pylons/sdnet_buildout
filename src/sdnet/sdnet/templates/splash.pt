@@ -177,6 +177,16 @@
                 <a href="https://store.kuiu.com"><img alt="KUIU" src="/static/images/kuiulogo.png" /></a>
               </div>
             </div>
+            <div class='span2'>
+              <div class='white-card'>
+                <a href="http://dailyclimate.org/"><img alt="The Daily Climate" src="/static/images/tdc_square.jpg" /></a>
+              </div>
+            </div>
+            <div class='span2'>
+              <div class='white-card'>
+                <a href="http://environmentalhealthnews.org/"><img alt="Environmental Health News" src="/static/images/ehn_square.jpg" /></a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
