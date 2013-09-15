@@ -1,6 +1,6 @@
 The artifacts in this directory are *not* open source; they are
 copyrighted by Tamerlan Soziev and released under a proprietary license. 
-To purchas a license for this code,
-visit https://wrapbootstrap.com/theme/venera-responsive-multipurpose-template-WB059C895
+To purchase a license for this code, visit
+https://wrapbootstrap.com/theme/venera-responsive-multipurpose-template-WB059C895
 
 
